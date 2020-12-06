@@ -1,0 +1,36 @@
+#popup-rem.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        form.modal-content
+            .popup-header
+                .popup-close--icon.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+                h3.popup-title Списание с баланса
+            .col-xl-12.col-lg-12.col-md-12.col-sm-6.section-input-wrap.popup-input--wrap.p-0
+                label Сумма:
+                input.input-main(type="text" placeholder="Введите сумму")
+            .popup-balance--buttons.row
+                .popup-balance--button.pb-red 1 000
+                .popup-balance--button.pb-red 5 000
+                .popup-balance--button.pb-red 10 000
+                .popup-balance--button.pb-red 20 000
+                .popup-balance--button.pb-red 50 000
+                .popup-balance--button.pb-red 100 000
+            .col-xl-12.col-lg-12.col-md-12.col-sm-6.section-input-wrap.popup-input--wrap.p-0
+                label Комментарий:
+                textarea.textarea-input(placeholder="Комментарий..." cols="4" rows="3")
+            .popup-balance-checkboxes
+                .popup-balance-checkbox--wrap
+                    .popup-balance-checkbox.pbc-red
+                    input.popup-balance-checkbox__input(type="checkbox")
+                    span Пополнение баланса
+                .popup-balance-checkbox--wrap
+                    .popup-balance-checkbox.pbc-red
+                    input.popup-balance-checkbox__input(type="checkbox")
+                    span Бонус к балансу
+                .popup-balance-checkbox--wrap
+                    .popup-balance-checkbox.pbc-red
+                    input.popup-balance-checkbox__input(type="checkbox")
+                    span Бонус по промокоду
+            .popup-section-button
+                .section-button--gray.close(data-dismiss="modal" aria-label="Close") Отменить
+                button.section-button--yellow.section-button--red(type="submit") Применить

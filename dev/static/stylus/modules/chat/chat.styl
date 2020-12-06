@@ -1,0 +1,871 @@
+.chat-container-block
+  border-radius: 5px;
+  background: #fff;
+.chat-container-header
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #272727;
+.chat-container-header,.chat-container-header--info__option
+  display flex
+  align-items center
+.chat-container-header .gogocar-go-back
+  min-width: 40px;
+  margin-right: 25px;
+  position relative
+  left auto
+ .gogocar-go-back
+   display flex 
+   justify-content: center
+   align-items: center
+   border-radius: 5px
+   .icon 
+     size(12px) 
+     fill: #fff 
+     stroke: #fff
+     //transform: rotate(90deg)
+     
+.gogocar-go-back-chat--mobile
+  display none
+.gogocar-go-back
+  position: relative;
+  left: auto;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  background-color: rgba(255,255,255,.05);
+.gogocar-gray-icons
+  position: absolute;
+  left: 15px;
+  background: #424b5b3d;
+.gogocar-gray-icons, .gogocar-gray-icons2, .gogocar-yellow-icons
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+.chat-container-message--format-download
+  border-radius: 10px
+  .icon 
+    margin-right: 0
+.chat-container-header--img
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+.chat-container-header--info__option
+  width: 100%;
+  justify-content: space-between;
+.chat-container-header--name
+  font-family: 'Oswald 500',sans-serif;
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #fff;
+.chat-container-header--desc
+  font-family: 'Montserrat 400',sans-serif
+  font-size: 12px;
+  color: rgba(255,255,255,.6);
+  a 
+    font-family: 'Montserrat 400',sans-serif 
+    margin-left: 5px
+    color #fff
+.chat-container-header--option--left--wrap
+  display flex
+  position relative
+.chat-container-header--option-delete__panel
+  position: relative;
+  display: none;
+  align-items: center;
+.chat-container-header--option-delete--delete .gogocar-gray-icons
+  position: relative;
+  left: auto;
+  width: 42px;
+  height: 42px;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.05);
+.chat-container-header--option-delete__panel .gogocar-gray-icons .icon-delete
+  size(19px)
+.chat-container-header--option-delete__panel .gogocar-gray-icons .icon
+  size(15px)
+.chat-delete-out-msg, .popular-trip-slider .gogocar-yellow-button
+  display none
+.chat-container-option--message--item
+  display: flex;
+  margin-bottom: 25px;
+  cursor: pointer;
+  align-items: center;
+.chat-container-option--message--item--cancel
+  display none
+.chat-container-header--option-delete__panel .gogocar-gray-icons:last-child
+  margin-right: 0;
+.chat-container-header--option-delete__panel .gogocar-gray-icons
+  position: relative;
+  left: auto;
+  width: 42px;
+  height: 42px;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,.05);
+
+.chat-container-header--option
+  position: relative;
+  left: auto;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  background-color: rgba(255,255,255,.05);
+.chat-container-header--option .icon
+  width: 22px;
+  height: 22px;
+  margin-right: 0
+  fill: #fff
+.chat-container-header--delete__message
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  top: 60px;
+  display: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #F4F4F4;
+  box-shadow: 0 0 20px rgba(0,0,0,.3);
+  flex-direction: column
+  width max-content
+.chat-container-header--delete__message .icon
+  width: 19px;
+  height: 19px;
+  margin-right: 15px;
+.chat-container-header--delete__message span
+  font-family: 'Montserrat 500',sans-serif;
+  font-size: 14px;
+  width: max-content;
+  color: #272727;
+.chat-container-main--info
+  overflow-y: scroll;
+  max-height: 485px;
+  margin-right: 5px;
+  padding-bottom: 130px
+.chat-container-main--info::-webkit-scrollbar
+  width: 5px;
+  border-radius: 5px;
+.chat-container-main--info::-webkit-scrollbar-button, .you-trip-chat-content::-webkit-scrollbar-button
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+.chat-container-main--info::-webkit-scrollbar-thumb
+  border-radius: 10px;
+  background-color: #2F80ED
+.chat-container-main--info::-webkit-scrollbar-track
+  margin-right: 5px;
+.chat-container-main--info::-webkit-scrollbar-track-piece
+  border-radius: 10px;
+  background: rgba(255,255,255,.05);
+.chat-container-main-last--date
+  font-family: 'Oswald 500',sans-serif;
+  font-size: 15px;
+  display: block;
+  padding: 40px 0;
+  text-align: center;
+  color: #272727;
+.chat-container-message-out
+  align-items: flex-end;
+  .chat-container-message--wrapper
+    justify-content: flex-end
+.chat-container-message-in, .chat-container-message-out
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  transition: .5s ease;
+.chat-container-message--wrapper
+  display: flex;
+  max-width: 65%;
+.chat-container--message--status
+  display: flex;
+  margin-right: 8px;
+  align-items: flex-end;
+.chat-container--message--status 
+  .icon
+    width: 17px;
+    height: 17px;
+    margin-bottom: 8px;
+    fill #2F80ED
+  .icon-not-looked
+    fill #C9C9C9
+.chat-container-message--wrap
+  position: relative;
+  display: flex;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: rgba(39,39,39,.05);
+.chat-container-message--file-type
+  display: flex;
+  align-items: center;
+.chat-container-message--format .icon
+  width: 34px;
+  height: 34px;
+  margin-right: 17px;
+.chat-container-message--format-text
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+.chat-container-message--format-name
+  font-family: 'Montserrat 500',sans-serif;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #272727;
+.chat-container-message--format-time
+  font-family: 'Montserrat 500',sans-serif;
+  font-size: 13px;
+  color: rgba(39,39,39,.4);
+.chat-container-message--format-download
+  position: relative;
+  left: auto;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+.chat-container-message--format-download .icon
+  width: 18px;
+  height: 18px;
+.chat-container-message--wrap--delete__check--wrap
+  display: none;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+.chat-container-message--wrap--delete__check
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 50%;
+  background-color: rgba(43,47,63,.15);
+  justify-content: center;
+.chat-container-message--wrap--delete__check, .delete-chat-msg
+  display: flex;
+  align-items: center;
+.chat-container-message-in
+  align-items: flex-start;
+.chat-container-message-in .chat-container-message--date__name, .chat-container-message-in .chat-container-message--file-type, .chat-container-message-in .chat-container-message--name--wrap, .chat-container-message-in .chat-container-message--wrap
+  flex-flow: row-reverse;
+.chat-container-message-in .chat-container-message--info__message
+  margin-left: 15px;
+.chat-container-message--info__message p  
+  font-family: 'Montserrat 400',sans-serif
+  font-size: 13px
+  color rgba(39,39,39,0.5)  
+.chat-container-message--img
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+.chat-container-message--date__name
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+.chat-container--message
+  font-family: 'Montserrat 400',sans-serif;
+  font-size: 13px;
+  color: rgba(39,39,39,.5);
+.chat-container-message--date__name span
+  font-family: 'Montserrat 500',sans-serif;
+  font-size: 13px;
+  color: rgba(39,39,39,.4)
+.chat-delete-message,.chat-change-message,.chat-answer-message
+  span 
+    color #272727 !important  
+.chat-container-message--name--wrap
+  position: relative;
+  display: flex;
+  align-items: center;
+.chat-container-message-in .chat-container-message--name--button
+  margin-left: 7px;
+.chat-container-message--name--button
+  position: relative;
+  cursor: pointer;
+  transition: all linear .2s;
+  opacity: 0;
+  margin: 0 7px
+  .icon 
+    size(13px)
+    transform: rotate(90deg)
+    stroke: #2F80ED
+
+.chat-container-message--name--button .icon-down-arrow
+  width: 12px;
+  height: 12px;
+  margin-bottom: 3px;
+  transform: rotate(0deg);
+.chat-show-message-in
+  top: 25px;
+  left: 85%;
+.chat-container-option--message
+  position: absolute;
+  z-index: 2;
+  display: none;
+  padding: 17px;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0,0,0,.3);
+  box-shadow: 0 0 20px rgba(0,0,0,.3);
+.chat-answer-message
+  margin-bottom: 0;
+.chat-container-option--message--item
+  display: flex;
+  margin-bottom: 25px;
+  cursor: pointer;
+  align-items: center;
+.chat-container-option--message--item--cancel
+  display none
+.chat-container-option--message .icon
+  width: 19px;
+  height: 19px;
+  margin-right: 15px;
+.chat-delete-message .icon 
+  fill #EF4037  
+.chat-container-option--message span
+  font-size: 13px;
+  color: #fff;
+.chat-container-message--name
+  font-family: 'Oswald 400',sans-serif;
+  font-size: 14px;
+  color: #272727;
+.chat-container-message-in .chat-container-message--format-text
+  margin-right: 17px;
+  margin-left: 25px;
+.chat-container-footer
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px;
+.chat-container-footer-wrap--inputs
+  position: relative;
+  display: flex;
+  margin: 0 20px;
+  border-radius: 5px;
+  background-color: rgba(39,39,39,.05);
+  align-items: flex-end;
+.chat-container--edit--message
+  position: absolute;
+  bottom: 48px;
+  display: none;
+  width: 100%;
+  height: max-content;
+  padding: 15px 15px 15px 20px;
+  border-bottom: 1px solid rgba(255,255,255,.4);
+  border-radius: 5px 5px 0 0;
+  background-color: #FAFAFA
+  align-items: center;
+  justify-content: space-between;
+.chat-container--edit--close
+  display: flex;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+.chat-container--edit--title
+  font-family: 'Oswald 500',sans-serif;
+  font-size: 13px;
+  color: #2F80ED;
+.chat-container--edit--text
+  font-family: 'Montserrat 500',sans-serif;
+  font-size: 12px;
+  color: #272727;
+.chat-container--edit--close .icon
+  size(18px)
+.chat-container--edit--message--file--add
+  min-height: 66px;
+  margin-bottom: 0;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 4px 9px 4px 15px;
+.chat-container--edit--message--file--add, .chat-container-footer--emoji--list
+  position: absolute;
+  bottom: 48px;
+  display: none;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-bottom: 1px solid rgba(255,255,255,.4);
+  border-radius: 5px 5px 0 0;
+  background-color: #FAFAFA;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+.personal-appear--file--wrap
+  margin-bottom: 0;
+.personal-appear--file--wrap
+  margin: 0 0 60px;
+.personal-loaded--file__icon
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+.personal-loaded--file__icon .icon
+  width: 18px;
+  height: 18px;
+  fill #272727
+.chat-container-footer--file__input
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  padding: 0 12px;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+.chat-container-footer--file__input .icon
+  width: 21px;
+  height: 21px;
+  fill rgba(39,39,39,0.7)
+.chat-container-footer--input__file
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+.chat-container-footer--file__input:after
+  position: absolute;
+  right: 0;
+  width: 1.5px;
+  height: calc(100% - 24px);
+  content: '';
+  background-color: rgba(39,39,39,.6);
+.chat-container-footer--text__input
+  position: relative;
+  min-height: 50px;
+.chat-container-footer--input__text, .chat-container-footer--text__input
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+.chat-container-footer--input__text
+  font-family: 'Montserrat 400',sans-serif;
+  font-size: 14px;
+  overflow-y: scroll;
+  height: 100%;
+  min-height: 40px;
+  max-height: 40px;
+  padding: 10px;
+  word-break: break-all;
+  color: #272727;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+.chat-container-footer--input__text::-webkit-scrollbar
+  width 0
+.chat-container-footer--placeholder
+  font-family: 'Montserrat 400',sans-serif;
+  font-size: 13px;
+  position: absolute;
+  top: 50%;
+  right: auto;
+  left: 54px;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  color: rgba(39,39,39,.5);
+.chat-container-footer--smiles
+  position: relative;
+  padding: 12px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+.chat-container-footer--smiles .icon
+  width: 21px;
+  height: 21px;
+.chat-container-footer--smiles:after
+  position: absolute;
+  right: 0;
+  width: 1.6px;
+  height: calc(100% - 24px);
+  content: '';
+  background-color: rgba(39,39,39,.6);
+.chat-container-footer--emoji--list
+  margin: 0;
+  padding: 9px 9px 9px 15px;
+.cab-chat-emoji
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+  cursor: pointer;
+.chat-container-footer--submit
+  padding: 12px;
+  border: 0;
+  background-color: transparent;
+.chat-container-footer--submit .icon
+  width: 25px;
+  height: 25px;
+  fill #2F80ED
+.chat-container-message-out .chat-container-message--info__message
+  margin-right: 15px;
+.chat-container-message-in .chat-container-message--format .icon
+  margin-right 0
+.chat-container-message--wrap:hover .chat-container-message--name--button
+  opacity 1
+.chat-container-message-out .chat-container-message--name--button
+  margin-right: 7px;
+.chat-container-header--option-delete__panel .gogocar-gray-icons .icon-delete-red
+  size(19px)
+.chat-container-header--option-delete__panel .gogocar-gray-icons .icon-close
+  fill #fff
+.chat-container-message--wrap--delete__check.checked
+  border: 1.5px solid #2F80ED
+.chat-container-message--wrap--delete__check.checked .icon
+  size(12px)
+  fill #2F80ED
+.chat-container-option--message--item:last-child
+  margin-bottom 0
+.chat-container-option--message--item:hover span
+  color#2F80ED
+.gogocar-gray-icons .icon
+  margin-right: 0
+.chat-answer-message
+  margin-bottom 0
+.chat-show-message-out
+  top: 25px;
+  right: 85%;
+.chat-container--edit--message:before
+  position: absolute;
+  left: 10px;
+  width: 2px;
+  height: calc(100% - 30px);
+  content: '';
+  background-color: #2F80ED;
+.chat-container--edit--close .icon
+  fill #272727
+.gogocar-emoji--in-input
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+.chat-container--edit--message--file--add
+  min-height: 66px;
+  margin-bottom: 0;
+  justify-content: space-between;
+  padding: 4px 9px 4px 15px;
+
+.chat-container--edit--message--file--add.active
+  display: flex;
+.personal-loaded--file
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 47px;
+  margin-top: 5px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  padding: 6px;
+  border-radius: 12px;
+  background-color: #EFEFEF;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+.personal-icon-loaded--appeal
+  background-color: #EFEFEF;
+.personal-loaded--file .gogocar-gray-icons
+  position: relative;
+  left: auto;
+  width: 35px;
+  height: 35px;
+.personal-loaded--file .gogocar-gray-icons .icon
+  width: 21px;
+  height: 21px;
+  margin-bottom: 0;
+.personal-loaded--file__name
+  font-family: 'Montserrat 500',sans-serif;
+  font-size: 12px;
+  color: #272727;
+.personal-appear--file--wrap
+  margin-bottom 0
+.delete-chat-msg
+  justify-content: space-between;
+.gogocar-red-button
+  display flex
+  justify-content center
+  align-items center
+  font-family: 'Montserrat SB',sans-serif;
+  font-size: 15px;
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-transition: all linear .2s;
+  -o-transition: all linear .2s;
+  transition: all linear .2s;
+  color: #fff;
+  border-radius: 30px;
+  background-color: #ff4b55;
+.delete-chat-msg .gogocar-gray-button, .delete-chat-msg .gogocar-red-button
+  height: 47px;
+.delete-chat-msg .gogocar-red-button
+  margin-right: 25px;
+.gogocar-gray-button
+  display flex
+  justify-content center
+  align-items center
+  font-family: 'Montserrat Bold',sans-serif;
+  font-size: 14px;
+  width: 100%;
+  max-width: 210px;
+  height: 55px;
+  cursor: pointer;
+  -webkit-transition: all linear .2s;
+  -o-transition: all linear .2s;
+  transition: all linear .2s;
+  color: #fff;
+  border: 0;
+  border-radius: 30px;
+  background: #424b5b;
+.popup-modal--wrap
+  max-width 500px
+.modal-open .modal
+  background-color: rgba(41,47,57,.8);
+.close-question-chat
+  display flex 
+  .icon 
+    fill #EF4037  
+.close-archive-chat,.close-delete-chat
+  .icon 
+    fill #292929;   
+.close-archive-chat
+  margin-bottom: 25px   
+.chat-container-header--option-delete--delete
+  background-color: #FF4B55 !important
+  .icon 
+    fill #fff 
+    size(20px !important)
+.chat-container-header--option-delete--back
+  .icon 
+    fill #fff 
+    size(20px !important)   
+.main-section--title--v2 
+  font-family: 'Montserrat SB',sans-serif 
+  font-size: 20px 
+  text-align: center
+.gogocar-red-button
+  font-family: 'Montserrat SB',sans-serif 
+  font-size: 14px 
+  border-radius: 10px 
+  transition: all linear .2s
+  &:hover 
+    box-shadow: 0px 0px 15px rgba(255, 75, 85, 0.4);      
+.gogocar-gray-button    
+  font-family: 'Montserrat SB',sans-serif 
+  font-size: 14px 
+  border-radius: 10px 
+.chat-container-message-in .chat-container-message--wrap
+  background-color: #E9E9E9  
+.section-chat-flex__wrap
+  display flex
+  .section-dialog
+    padding-left: 30px
+    height: calc(100vh - 100px);  
+.chats-dialogs
+  height 100%
+.bg-border
+  border-radius: 10px
+.chats-top
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(39,39,39,0.1);
+  padding: 20px 0 15px 0;
+  margin: 0px 15px;
+  margin-bottom: 15px;  
+.section-title-v1
+    font-family: 'Montserrat SB', sans-serif;
+    font-size: 15px;
+    color: #272727;
+    margin-bottom: 25px;
+.chats-dots
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  background-color: rgba(39,39,39,0.05);
+  border-radius: 10px
+.chats-dots .icon
+    width: 20px;
+    height: 20px;
+    fill: #272727;
+.chats-bottom-search
+    position: relative;
+    margin: 0 15px;
+    margin-bottom: 15px;  
+.section-lk-input
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Rubik 400', sans-serif;
+  font-size: 13px;
+  color: rgba(39,39,39,0.6);
+  height: 46px;
+  padding: 14px;   
+.chats-search
+  width: 100%
+.section-lk-input--date__icon--block
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: auto;
+  right: 0;
+  //pointer-events: none; 
+  cursor pointer   
+  .icon 
+    width: 20px;
+    height: 20px;
+    fill: #4a4848;
+    opacity: 0.3 
+.chats-bottom-users--list
+    overflow-y: auto;
+    height: calc(100vh - 276px);
+    margin-right: 5px;  
+.chats-bottom-users--item
+  padding: 20px 15px;
+  cursor: pointer;   
+.chats-bottom-users--item__top
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 18px;   
+.chats-bottom-users--left
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+.chats-bottom-users--right__name
+    font-family: 'Montserrat SB', sans-serif;
+    font-size: 14px;
+    color: #272727;
+    margin-bottom: 6px;           
+.chats-bottom-users--right__theme
+    font-family: 'Roboto 400', sans-serif;
+    font-size: 12px;
+    color: #afb2b5; 
+.chats-bottom-users--item__bottom
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;      
+.chats-bottom-users--item__msg
+  font-family: 'Roboto 400', sans-serif;
+  font-size: 12px;
+  color: #afb2b5;  
+.chats-bottom-users--item__notif
+  background-color: #2f80ed;
+  -webkit-box-shadow: 0px 0px 5px rgba(47,128,237,0.5);
+  box-shadow: 0px 0px 5px rgba(47,128,237,0.5);
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  color: #fff;
+  font-family: 'Montserrat 500', sans-serif;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;  
+.chats-bottom-users--item:hover
+  background-color: #f9f9f9;
+.chats-bottom-users--list::-webkit-scrollbar 
+    width: 5px;
+    border-radius: 5px;  
+.chats-bottom-users--list::-webkit-scrollbar-button 
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;   
+.chats-bottom-users--list::-webkit-scrollbar-thumb 
+    border-radius: 10px;
+    background-color: #2f80ed; 
+.chats-bottom-users--list::-webkit-scrollbar-track
+    margin-right: 5px;   
+.chats-bottom-users--list::-webkit-scrollbar-track-piece
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);         
+.content-chats-main
+  padding-bottom: 0
+.chat-container-header--info__mobile
+  display none
+.close-archive-chat   
+  margin-bottom: 0 
+.mogile-go-back-button
+  display none  

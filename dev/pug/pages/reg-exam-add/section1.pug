@@ -1,0 +1,63 @@
+section.section-1
+    .section-content--main__wrap.box-bg2.pb-0
+        .section-content--main
+            .section-top-side
+                .section-top-block--back
+                    .section-top-block--back__item
+                        +icon('arrow-right','arrow-rotate')
+                    .section-block--title Create New Users
+            .section-support-form
+                .section-bottom-side.row.p-12-0.m-0
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Экзамен:
+                        input.input-main(type="text" placeholder="Выберите экзамен..")
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Способ оплаты:
+                        input.input-main(type="text" placeholder="Выберите способ оплаты...") 
+                    .col-xl-4.col-lg-4.col-md-6.col-sm-12.section-input-wrap
+                        label Имя:
+                        input.input-main(type="text" placeholder="Укажите имя...")
+                    .col-xl-4.col-lg-4.col-md-6.col-sm-12.section-input-wrap
+                        label Фамилия:
+                        input.input-main(type="text" placeholder="Укажите фамилию...")
+                    .col-xl-4.col-lg-4.col-md-6.col-sm-12.section-input-wrap
+                        label Отчество:
+                        input.input-main(type="text" placeholder="Укажите отчество...")
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Телефон:
+                        input.input-main.phone-mask(type="tel" placeholder="Укажиет телефон...")  
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Email:
+                        input.input-main(type="email" placeholder="Укажиет email...")     
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Дата:
+                        .input-wrap--icon
+                            input.input-main(type="text" placeholder="Укажите дату...")
+                            .input-main--icon 
+                                +icon('calendar2')
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Время:
+                        .input-wrap--icon
+                            input.input-main(type="text" placeholder="Укажите время...")
+                            .input-main--icon 
+                                +icon('clock')
+                
+                    .section-flex-direction
+                        .section-block--title.mb-3 Промокод    
+                        .row.p-12-0.m-0                
+                            .col-xl-12.col-lg-12.col-md-6.col-sm-12.section-input-wrap
+                                label Промокод:
+                                input.input-main(type="email" placeholder="Укажиет промокод")
+                            
+                            .promocode-input-show 
+                                .promocode-left 
+                                    .promocode-title law30slnote
+                                    .promocode-status Применен
+                                .promocode-right       
+                                    .promocode-close 
+                                        +icon('close')              
+                .section-footer-side
+                    .section-buttons--wrap 
+                        .section-button--yellow.w-100px.mr-3 Сохранить
+                        .section-button--gray.w-100px.mr-3 Применить
+                        .section-button--gray.w-100px Отменить

@@ -1,0 +1,197 @@
+section.section-1
+    .col-xl-12.col-lg-12.p-0.personal-chat-container.personal-fixed-chat--container
+        .chat-container-block
+            .chat-container-header
+                .gogocar-gray-icons.gogocar-go-back.gogocar-go-back-chat--mobile.sup-mob-hidden
+                    +icon('arrow-left','arrow-rotate')
+                .chat-container-header--img(style="background-image:url('./static/img/content/drivers-avatar/driver1.png')")
+                .chat-container-header--info__option
+                    .chat-container-header--info
+                        .chat-container-header--name Запрос №2 “Не работает форма связи”
+                        .chat-container-header--desc Пользователь: #[a(href="/") Мария Хохлова]
+                    .chat-container-header--option--left--wrap
+                        .chat-container-header--option-delete__panel
+                            .chat-container-header--option-delete--delete.gogocar-gray-icons(data-toggle="modal" data-target="#popup-del-msg")
+                                +icon('delete-red')
+                            .chat-delete-out-msg
+                                .chat-text-delete__message Удалить сообщения?
+                                .chat-container-option--message--wrap
+                                    .chat-container-option--message--item.chat-choise-delet-msg
+                                        +icon('delete')
+                                        span Удалить
+                                    .chat-container-option--message--item--cancel Отмена
+                            .chat-container-header--option-delete--back.gogocar-gray-icons
+                                +icon('close')
+                        .chat-container-header--option.chat-container-option-dot.gogocar-gray-icons
+                            +icon('dots2')
+                        .chat-container-header--delete__message
+                            .chat-container-header--delete__message--item(data-toggle="modal" data-target="#popup-choise-text")
+                                +icon('question3')
+                                span Выбрать ответ
+                            .chat-container-header--delete__message--item
+                                +icon('delete-red')
+                                span Закрыть запрос
+
+            .chat-container-main
+                .chat-container-main--info
+                    .chat-container-main-last--date 6 Июня
+                    .chat-container-people-messages.chat-container-message-out
+                        .chat-container-message--wrapper
+                            .chat-container--message--status
+                                +icon('looked')
+                            .chat-container-message--wrap
+                                .chat-container-message--file-type
+                                    .chat-container-message--format
+                                        +icon('chat-png')
+                                    .chat-container-message--format-text
+                                        span.chat-container-message--format-name Фото.png
+                                        span.chat-container-message--format-time 14:02
+                                a.chat-container-message--format-download.gogocar-gray-icons(href="/" download)
+                                    +icon('download')
+                            .chat-container-message--wrap--delete__check--wrap
+                                .chat-container-message--wrap--delete__check
+
+
+                    .chat-container-people-messages.chat-container-message-out
+                        .chat-container-message--wrapper
+                            .chat-container--message--status
+                                +icon('looked')
+                            .chat-container-message--wrap
+                                .chat-container-message--info__message
+                                    .chat-container-message--date__name
+                                        span 14:02
+                                        .chat-container-message--name--wrap
+                                            .chat-container-message--name--button
+                                                +icon('arrow-right')
+
+                                            .chat-container-option--message.chat-show-message-out.chat-show-message-out--mobile
+                                                .chat-container-option--message--wrap
+                                                    .chat-container-option--message--wrap--buttons
+                                                        .chat-container-option--message--item.chat-change-message
+                                                            +icon('pen2')
+                                                            span Изменить
+                                                        .chat-container-option--message--item.chat-delete-message
+                                                            +icon('delete-red')
+                                                            span Удалить
+                                                    .chat-container-option--message--item--cancel Отмена
+
+
+                                            .chat-container-message--name Татьяна Гусева
+                                    p.chat-container--message In orci pulvinar metus erat.
+                                .chat-container-message--img(style="background-image:url('./static/img/content/drivers-avatar/driver2.png')")
+                            .chat-container-message--wrap--delete__check--wrap
+                                .chat-container-message--wrap--delete__check
+                    .chat-container-people-messages.chat-container-message-in
+                        .chat-container-message--wrapper
+                            .chat-container-message--wrap
+                                .chat-container-message--info__message
+                                    .chat-container-message--date__name
+                                        span 14:02
+                                        .chat-container-message--name--wrap
+                                            .chat-container-message--name--button
+                                                +icon('arrow-right')
+                                            .chat-container-option--message.chat-show-message-in.chat-show-message-in--mobile
+                                                .chat-container-option--message--wrap
+                                                    .chat-container-option--message--item.chat-answer-message
+                                                        +icon('share2')
+                                                        span Ответить
+                                                    .chat-container-option--message--item--cancel Отмена
+
+                                            .chat-container-message--name Матвей Федотов
+                                    p.chat-container--message In orci pulvinar metus erat.In orci pulvinar metus erat.
+                                .chat-container-message--img(style="background-image:url('./static/img/content/drivers-avatar/driver1.png')")
+                    .chat-container-people-messages.chat-container-message-out
+                        .chat-container-message--wrapper
+                            .chat-container--message--status
+                                +icon('not-looked')
+                            .chat-container-message--wrap
+                                .chat-container-message--info__message
+                                    .chat-container-message--date__name
+                                        span 14:02
+                                        .chat-container-message--name--wrap
+                                            .chat-container-message--name--button
+                                                +icon('arrow-right')
+                                            .chat-container-option--message.chat-show-message-out.chat-show-message-out--mobile
+                                                .chat-container-option--message--wrap
+                                                    .chat-container-option--message--wrap--buttons
+                                                        .chat-container-option--message--item.chat-change-message
+                                                            +icon('pen2')
+                                                            span Изменить
+                                                        .chat-container-option--message--item.chat-delete-message
+                                                            +icon('delete-red')
+                                                            span Удалить
+                                                    .chat-container-option--message--item--cancel Отмена
+                                            .chat-container-message--name Татьяна Гусева
+                                    p.chat-container--message In orci pulvinar metus erat.
+                                .chat-container-message--img(style="background-image:url('./static/img/content/drivers-avatar/driver2.png')")
+                            .chat-container-message--wrap--delete__check--wrap
+                                .chat-container-message--wrap--delete__check
+                    .chat-container-people-messages.chat-container-message-in
+                        .chat-container-message--wrapper
+                            .chat-container-message--wrap
+                                .chat-container-message--file-type
+                                    .chat-container-message--format
+                                        +icon('chat-png')
+                                    .chat-container-message--format-text
+                                        span.chat-container-message--format-name Фото.png
+                                        span.chat-container-message--format-time 14:02
+                                a.chat-container-message--format-download.gogocar-gray-icons(href="/" download)
+                                    +icon('download')
+                    .chat-container-people-messages.chat-container-message-in
+                        .chat-container-message--wrapper
+                            .chat-container-message--wrap
+                                .chat-container-message--info__message
+                                    .chat-container-message--date__name
+                                        span 14:02
+                                        .chat-container-message--name--wrap
+                                            .chat-container-message--name--button
+                                                +icon('arrow-right')
+                                            .chat-container-option--message.chat-show-message-in.chat-show-message-in--mobile
+                                                .chat-container-option--message--wrap
+                                                    .chat-container-option--message--item.chat-answer-message
+                                                        +icon('share2')
+                                                        span Ответить
+                                                    .chat-container-option--message--item--cancel Отмена
+                                            .chat-container-message--name Матвей Федотов
+                                    p.chat-container--message In orci pulvinar metus erat.In orci pulvinar metus erat.
+                                .chat-container-message--img(style="background-image:url('./static/img/content/drivers-avatar/driver1.png')")
+            .chat-container-footer
+                .chat-container-footer-wrap--inputs
+                    .chat-container--edit--message#chat-edit-msg
+                        .chat-container--edit--wrap
+                            .chat-container--edit--title Редактировать
+                            .chat-container--edit--text#chat-edit-text Тут будет проверочный текст
+                        .chat-container--edit--close#chat-edit-close
+                            +icon('close')
+                    .chat-container--edit--message--file--add
+                        .personal-appear--file--wrap.row#chat-file-add
+                        .personal-loaded--file__icon
+                            +icon('close')
+
+                    .chat-container-footer--file__input
+                        +icon('skrepka2')
+                        input.chat-container-footer--input__file(type="file" multiple)
+                    .chat-container-footer--text__input
+                        .chat-container-footer--input__text#chat-get-text(contenteditable="true" role="textbox" aria-multiline="true")
+                        .chat-container-footer--placeholder Cообщение...
+                    .chat-container-footer--smiles
+                        +icon('smile2')
+                    .chat-container-footer--emoji--list.row
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji1.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji2.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji3.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji4.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji5.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji6.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji7.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji8.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji9.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji10.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji11.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji12.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji13.png" alt="emoji")
+                        img.cab-chat-emoji(src="./static/img/content/emoji/emoji14.png" alt="emoji")
+
+
+                    button.chat-container-footer--submit
+                        +icon('send')

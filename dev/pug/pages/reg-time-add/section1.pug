@@ -1,0 +1,44 @@
+section.section-1
+    .section-content--main__wrap.box-bg2.pb-0
+        .section-content--main
+            .section-top-side
+                .section-top-block--back
+                    .section-top-block--back__item
+                        +icon('arrow-right','arrow-rotate')
+                    .section-block--title Купон
+            .section-support-form
+                .section-bottom-side.row.p-12-0.m-0
+                    .col-xl-4.col-lg-4.col-md-4.col-sm-12.section-balance-filter--date
+                        label Дата:
+                        .section-balance-filter--date__wrap.balance-filter--date__wrap--row
+                            .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                                .section-balance-filter-date__wrap
+                                    input.input-main.calendar-filter.calendar-zone-height(type="text")
+                                    .section-balance-date--icon
+                                        +icon('calendar2') 
+                    .col-xl-8.col-lg-8.col-md-8.col-sm-12.section-balance-filter--date
+                        label Диапозон времени:
+                        .section-balance-filter--date__wrap.balance-filter--date__wrap--row
+                            .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                                .section-balance-filter-date__wrap
+                                    input.input-main.calendar-filter-today.calendar-zone-height(type="text")
+                                    .section-balance-date--icon
+                                        +icon('calendar2')
+                            .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                                .section-balance-filter-date__wrap
+                                    input.input-main.calendar-filter.calendar-zone-height(type="text")
+                                    .section-balance-date--icon
+                                        +icon('calendar2')        
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Кол-во на диапазоне:
+                        input.input-main(type="text" placeholder="Кол-во на диапазоне...") 
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Ограничение кол-ва (чел):
+                        input.input-main(type="text" placeholder="Ограничение кол-ва (чел)...")     
+                              
+                           
+                .section-footer-side
+                    .section-buttons--wrap 
+                        .section-button--yellow.w-100px.mr-3 Сохранить
+                        .section-button--gray.w-100px.mr-3 Применить
+                        .section-button--gray.w-100px Отменить

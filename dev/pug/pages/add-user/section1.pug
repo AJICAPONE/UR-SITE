@@ -1,0 +1,58 @@
+section.section-1
+    .section-content--main__wrap.box-bg2.pb-0
+        .section-content--main
+            .section-top-side
+                .section-top-block--back
+                    .section-top-block--back__item
+                        +icon('arrow-right','arrow-rotate')
+                    .section-block--title Create New Users
+            .section-support-form
+                .section-bottom-side.row.p-12-0.m-0
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Имя:
+                        input.input-main(type="text" placeholder="Направления...")
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Телефон:
+                        input.input-main.phone-mask(type="text" placeholder="Телефон...") 
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label E-mail:
+                        input.input-main(type="text" placeholder="E-mail...")       
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Категория:
+                        .section-select--input2.section-select--input__show.justify-content-start
+                            .section-yellow-bg--wrap
+                                .section-yellow-bg--content
+                                    span Admin
+                                    .section-yellow-bg--content__icon
+                                        +icon('close')
+                                
+                            ul.section-select--popup__list
+                                li.section-select--popup__item.hover-text-color Admin
+                                li.section-select--popup__item.hover-text-color Admin2
+                                li.section-select--popup__item.hover-text-color Admin3
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Пароль:
+                        input.input-main(type="text" placeholder="Пароль...")
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Подтвердите пароль:
+                        input.input-main(type="text" placeholder="Подтвердите пароль...")
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Позиция курса:
+                        input.input-main(type="text" placeholder="Позиция курса...")
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Позиция урока:
+                        input.input-main(type="text" placeholder="Позиция урока...")
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        .checkbox-input--tab__item 
+                            .checkbox-input    
+                            input.checkbox-input--tab(type="checkbox") 
+                            span isVerified
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        .section-file-info-add2
+                            +icon('skrepka2')
+                            span Загрузить фото
+                            input.section-file-info-add__input2(type="file")                   
+                .section-footer-side
+                    .section-buttons--wrap
+                        button.section-button--yellow.w-155px(type="submit") Добавить
+                        

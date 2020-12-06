@@ -1,0 +1,532 @@
+.support-time-server
+  font-family 'Oswald 500',sans-serif
+  font-size 16px
+  color #272727
+.section-support-status
+  size(15px)
+  max-width 15px
+  border-radius 50%
+.status-red
+  background-color #FF4B55
+.status-green
+  background-color #09B983
+.status-gray
+  background-color #C6C6C6
+.section-block--title
+  font-weight normal
+.padding-th-title
+  padding 5px 15px 15px
+.w-th-100
+  width 100%
+.padding-status
+  padding 0 10px 15px;
+  text-align center
+.padding-text
+  font-family 'Open Sans 400',sans-serif
+  font-size 12px
+  color rgba(39, 39, 39, 0.6)
+  font-weight normal
+  padding 0 15px 15px 15px
+  text-align center
+.support-attr-support
+  display flex
+  justify-content center
+  align-items center
+.padding-status-td
+  width 35px
+.section-thead-support th
+  border-bottom 1px solid rgba(153, 163, 181, 0.3)
+.section-tbody-support td:first-child
+  font-family 'Open Sans 400',sans-serif
+  font-size 13px
+  color #272727
+.padding-td
+  padding 20px 15px
+.support-table
+  border-collapse separate
+  border-spacing 0 10px
+.section-tbody-support
+  background-color #F9F9F9
+  .text-center
+    font-family 'Open Sans 400',sans-serif
+    font-size 13px
+    color #272727
+
+.section-input-wrap:last-child
+  margin-bottom 8px
+.section-block-title-question
+  display flex
+  .section-block--title
+    margin-right 15px
+.section-block--question
+  position relative
+  .icon
+    size(21px)
+  &:hover
+    .section-block--question__content
+      opacity 1
+.section-status-block
+  size(18px)
+  border-radius 50%
+.status-yellow
+  background-color #2F80ED
+.section-author--info
+  display flex
+  flex-direction column
+.section-author--info_2
+  display flex
+  span
+    color #2F80ED
+    margin-right 3px
+.section-block--question__content
+  position: absolute;
+  //display: none;
+  opacity 0
+  left: -20px;
+  bottom 53px
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  width: max-content
+  z-index: 5;
+  padding 20px 16px
+  transition all linear .2s
+  pointer-events none
+  &:before
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom -20px
+    transform rotate(180deg)
+    -webkit-clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    z-index: 4;
+.section-block--question__title
+  font-family 'Oswald 500',sans-serif
+  font-size 16px
+  color #272727
+  margin-bottom 20px
+.section-block--question__li
+  display flex
+  align-items center
+  margin-bottom 10px
+  &:last-child
+    margin-bottom 0
+  .section-status-block
+    margin-right 10px
+    display flex
+    justify-content center
+    align-items center
+    font-family 'Open Sans 600',sans-serif
+    font-size 13px
+    color #fff
+  p
+    font-family 'Open Sans 400',sans-serif
+    font-size 13px
+    color rgba(39, 39, 39, 0.6)
+
+
+
+.section-text-options
+  display flex
+  align-items center
+  margin-bottom 10px
+.section-text-option__item
+  cursor pointer
+  margin-right 15px
+  .icon
+    size(14px)
+    fill #fff
+    opacity 1
+.textarea-text-option::-webkit-scrollbar  
+  width 0  
+.textarea-text-option
+  background-color #F9F9F9
+  border none
+  padding 15px
+  color rgba(39, 39, 39, 0.6)
+  font-family 'Open Sans 400',sans-serif
+  font-size 14px
+  outline none
+  margin 0 -15px
+  min-height 113px
+  overflow-y: auto 
+  
+  blockquote
+    border-left 2px solid #2F80ED
+    padding-left 15px
+    margin-bottom 0
+  ul
+      li
+        &:before
+          content: "\25CF";
+          display: inline-block;
+          width: 1em;
+          color: #2F80ED
+.textarea-contenteditable
+  min-height 113px
+  display flex
+  flex-direction column
+  a
+    color #2F80ED
+    text-decoration underline
+.section-select--input__time
+  position absolute
+  display flex
+  justify-content space-between
+  align-items center
+  right 5px
+  width 60px
+  height 32px
+  padding 7px 12px
+  background-color rgba(39, 39, 39, 0.05)
+  border-radius 3px
+  cursor pointer
+  .section-select--input__time--text
+    font-family 'Oswald 500',sans-serif
+    font-size 12px
+    color #272727
+  .icon
+    size(15px)
+    opacity 1
+    stroke #272727
+    transform: rotate(180deg)
+.section-select--input__time__list
+  position absolute
+  display none
+  width 60px
+  top: 40px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 0 40px rgba(27,33,43,0.3);
+  border-radius: 5px;
+  padding: 8px 11px;
+  z-index: 5;
+.section-select--input__time__item
+  margin-bottom: 8px;
+  font-family: 'Open Sans 400', sans-serif;
+  font-size: 13px;
+  color: #272727;
+  cursor: pointer;
+.w-50px
+  width 50px
+.section-bottom-side--scroll2
+  overflow-x: auto;
+  padding: 12px 0;
+  margin-bottom: 20px;
+.section-bottom-side--scroll2::-webkit-scrollbar
+  height: 10px;
+  border-radius: 10px;
+
+.section-bottom-side--scroll2::-webkit-scrollbar-button
+  display: block;
+  size(10px)
+  background-color: transparent;
+
+.section-bottom-side--scroll2::-webkit-scrollbar-thumb
+  border-radius: 10px;
+  background-color:#2F80ED
+  box-shadow: 0px 0px 10px rgba(253, 171, 62, 0.3);
+
+.section-bottom-side--scroll2::-webkit-scrollbar-track
+  margin-right: 5px;
+.section-bottom-side--scroll2::-webkit-scrollbar-track-piece
+  border-radius: 10px;
+  background: #f9f9f9
+
+.section-top-side--border-bottom
+  border-bottom: 1px solid rgba(153,163,181,0.3);
+  margin-bottom 15px
+
+.section-table2
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  width: 100%
+
+.section-table2 tr th
+  font-family: 'Open Sans 600', sans-serif;
+  font-size: 12px;
+  color: #272727;
+  font-weight: 600;
+  line-height: normal;
+  padding: 0;
+  padding-bottom: 15px;
+  white-space nowrap
+.section-table2 tr th:last-child
+  width 100%
+.section-table2 tr th:first-child
+  padding-right: 20px;
+  padding-left: 15px;
+.section-table2 tr td
+  padding-right: 20px;
+  //padding-left: 15px;
+.section-table2 tr td:first-child
+  padding-left 15px
+.section-table2 tr th:nth-child(2)
+  padding-right: 31px;
+.section-table2--input
+  background-color #F9F9F9
+  border-radius  5px
+  border none
+  color #272727
+  font-family 'Open Sans 400',sans-serif
+  height 42px
+  padding 12px
+  width 295px
+  font-size 12px
+.section-table2--td__id
+  display flex
+  .section-table2--input
+    text-align center
+    color rgba(39, 39, 39, 0.6)
+    &:first-child
+      width 42px
+      margin-right 20px
+.section-table2--input__contenteditable
+  display flex
+  align-items center
+  outline none
+  span
+    color #272727
+.section-table2--input__text
+  color #2F80ED
+  margin-right 3px
+.section-table2--width-word1
+  width 200px
+  word-break break-word
+  padding-right 40px !important
+.section-table2--width-word2
+  width 240px
+  word-break break-word
+  padding-right 40px !important
+.section-table2--width-word3
+  width 280px
+  word-break break-word
+  padding-right 40px !important
+.gray-checkbox
+  .checkbox-input.checked:before
+    background: #2F80ED
+    box-shadow: -4px 0px 0 #2F80ED, 2px 0px 0 #2F80ED, -2px 0px 0 #2F80ED, 4px 0 0 #2F80ED 4px -2px 0 #2F80ED, 4px -4px 0 #2F80ED, 4px -6px 0 #2F80ED, 4px -8px 0 #2F80ED, 4px -10px 0 #2F80ED, 4px -12px 0 #2F80ED, 4px -14px 0 #2F80ED;
+
+.section-table2--added__item
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 5px;
+  padding: 9px 25px;
+  height: 36px;
+  margin: 7.5px 15px 7.5px 0;
+  font-family: 'Oswald 500', sans-serif;
+  font-size: 12px;
+  color: #272727;
+  cursor: pointer;
+  transition: all linear 0.1s;
+  margin-left 15px
+  width max-content
+  &:hover
+    background-color: #F2F2F2;
+
+.chat-container-header--delete__message
+  width max-content
+  height auto
+  align-items flex-start
+  flex-direction column
+  padding 0
+  display none
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  .chat-container-header--delete__message--item
+    font-family 'Open Sans 400',sans-serif
+    font-size 14px
+    padding 12.5px 20px
+    transition all linear .2s
+    width 100%
+    &:hover
+      background-color #f2f2f2
+    &:first-child
+      border-radius 10px 10px 0px 0px
+    &:last-child
+      border-radius 0px 0 10px 10px
+  .icon
+    size(20px)
+.popup-choise--list
+  overflow-y auto
+  height: 370px;
+  margin-right -20px
+  border-radius 5px
+
+.popup-choise--list::-webkit-scrollbar
+  width: 6px;
+  border-radius: 10px;
+
+//.popup-choise--list::-webkit-scrollbar-button
+//  display: block;
+//  size(10px)
+//  background-color: transparent;
+
+.popup-choise--list::-webkit-scrollbar-thumb
+  border-radius: 10px;
+  background-color: #2F80ED
+  box-shadow: 0px 0px 10px rgba(47, 128, 237, 0.3);
+
+.popup-choise--list::-webkit-scrollbar-track
+  margin-right: 5px;
+.popup-choise--list::-webkit-scrollbar-track-piece
+  border-radius: 10px;
+  background: #424B5B
+
+
+.popup-choise--item
+  background-color #f2f2f2
+  border-radius 5px
+  padding 15px
+  transition all linear .2s
+  margin-bottom 15px
+  margin-right 15px
+  &:hover
+    background-color #fff
+.popup-choise--top
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 15px
+.popup-choise--top__title
+  font-family 'Oswald 400',sans-serif
+  font-size 14px
+  color #272727
+.popup-choise--top__button
+  font-family 'Oswald 400',sans-serif
+  font-size 14px
+  color #2F80ED
+  transition all linear .2s
+  cursor pointer
+  &:hover
+    text-shadow: 0px 0px 10px rgba(47, 128, 237, 0.5);
+.popup-choise--text
+  font-family 'Open Sans 400',sans-serif
+  font-size 13px
+  color #95979F
+  margin-bottom 20px
+.popup-choise--bottom
+  font-family 'Open Sans 400',sans-serif
+  font-size 13px
+  color #2F80ED
+
+.popup-input--icon__search
+  position absolute
+  right 16px
+  cursor pointer
+  height 100%
+  display flex
+  justify-content center
+  align-items center
+  width 40px
+  .icon
+    size(20px)
+.section-overflow-top-side
+  overflow-x scroll
+  padding 12.5px
+  .section-users--tabs
+    flex-wrap nowrap
+    width max-content
+
+.section-overflow-top-side::-webkit-scrollbar
+  height 0
+.section-tab-trip
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #424b5b;
+  border-radius: 5px;
+  padding: 9px 20px;
+  height: 36px;
+  margin: 7.5px 15px 7.5px 0;
+  font-family: 'Oswald 500', sans-serif;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  transition: all linear 0.1s;
+  &:hover
+    background-color: #2F80ED
+    box-shadow: 0px 0px 15px rgba(47, 128, 237, 0.4);
+  .icon
+    size(14px)
+    margin-right 15px
+.color-yellow
+  color #2F80ED
+  font-family 'Open Sans 400',sans-serif
+  font-size 13px
+.section-top-block--back
+  display flex
+  align-items center
+.section-top-block--back__item
+  display flex
+  justify-content center
+  align-items center
+  background-color rgba(39,39,39, 0.05)
+  border-radius 5px
+  margin-right 15px
+  cursor pointer
+  size(37px)
+  .icon
+    size(15px)
+    stroke: #272727
+.section-driver-trip-added
+  display flex
+  justify-content center
+  align-items center
+  background-color rgba(255, 255, 255, 0.05)
+  border-radius 5px
+  cursor pointer
+  size(32px)
+  min-width 32px
+  .icon
+    size(16px)
+.w-max
+  width: max-content;
+.w-140
+  width 140px
+.setion-trip-more--item
+  display flex
+  align-items center
+  background-color #424B5B
+  height 48x
+  padding 15px
+  font-family 'Open Sans 400',sans-serif
+  font-size 13px
+  margin-bottom 10px
+  &:last-child
+    margin-bottom 0
+.setion-trip-more--name
+  color #fff
+  margin-right 3px
+.setion-trip-more--info
+  color #FDAB3E
+  margin-right 3px
+  span
+    color #fff
+.jq-ry-normal-group svg
+  fill #F2F2F2
+.review-rating
+  margin-top 10px
+#rateYo
+  padding 0
+.section-table-type--car
+  padding-top 0 !important
+  padding-bottom 0 !important
+  .icon
+    width 100px
+    height 70px
+
+

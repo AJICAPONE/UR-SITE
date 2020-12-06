@@ -1,0 +1,44 @@
+.section-bottom-pagination--wrap
+  display flex
+  justify-content space-between
+  align-items center
+  background-color #f9f9f9
+  padding 7px 15px
+.section-bottom-pagination
+  ul
+    display flex
+  li
+    display flex
+    justify-content center
+    align-items center
+    border-radius 5px
+    size(35px)
+    cursor pointer
+    color #272727
+    margin-right 10px
+    font-family 'Open Sans 600',sans-serif
+    font-size 13px
+    &:first-child
+      margin-right 15px
+    &:last-child
+      margin-left 15px
+
+  li.active
+    background-color rgba(39, 39, 39, 0.05)
+
+  .page-link
+    display flex
+    justify-content center
+    align-items center
+    size(100%)
+    background-color transparent
+    padding 0
+    color #272727
+    border none
+    margin-left 0
+
+
+.section-content--main__wrap
+  padding-bottom 10px
+.arrow-rotate
+  transform rotate(180deg)

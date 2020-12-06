@@ -1,0 +1,10 @@
+extends ../layout/main2
+
+block variables
+	- var title = 'Чат'
+	- var pageClass = 'index-page'
+
+block content
+	.section-chat-flex__wrap
+		include chat/section-dialog
+		include chat/section1

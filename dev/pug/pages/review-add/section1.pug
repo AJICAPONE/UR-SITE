@@ -1,0 +1,25 @@
+section.section-1
+    .section-content--main__wrap.box-bg2.pb-0
+        .section-content--main
+            .section-top-side
+                .section-top-block--back
+                    .section-top-block--back__item
+                        +icon('arrow-left','arrow-rotate')
+                    .section-block--title Добавить отзыв
+            form.section-support-form
+                .section-bottom-side
+                    .section-inputs--wrapper.row
+                        .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                            label Оценка
+                            .review-rating
+                                #rateYo.m-0-auto(data-rating="0")
+                                input.rateyo-hidden(type="hidden" name="rating_hidden" value="")
+                        .col-xl-12.col-lg-12.col-md-12.col-sm-6.section-input-wrap
+                            label Тип поездки:
+                            textarea.textarea-input(cols="5" rows="4")
+
+
+                .section-footer-side
+                    .section-buttons--wrap
+                        button.section-button--yellow.w-100px.mr-3(type="submit") Сохранить
+                        .section-button--gray.w-100px Отменить

@@ -1,0 +1,104 @@
+@import 'utils/fonts.styl'
+@import 'utils/vars.styl'
+@import 'utils/mixins.styl'
+@import 'libs.styl'
+@import "components/components.styl"
+
+html
+	font-size baseFontSize
+	height 100%
+	line-height 1.3
+
+body
+	font-family mainFont
+	height 100%
+	overflow-y hidden
+
+h1,h2,h3,h4,h5,h6
+	margin 0
+
+ul,li
+	list-style-type none
+	margin 0
+	padding 0
+
+p
+	margin 0
+
+a
+	color black
+	text-decoration none
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align middle
+
+textarea
+	resize none
+
+section
+	position relative
+	padding 30px
+	padding-bottom 0
+
+	&:last-child
+		padding-bottom 30px
+
+input,
+select,
+button
+	outline none
+
+*, *:before, *:after
+	box-sizing border-box
+
+.wrapper
+	display flex
+	flex-direction column
+	height 100%
+
+.content
+	flex 1 0 auto
+	height calc(100vh - 60px)
+	overflow-y auto
+	background-color #F2F2F2
+	padding-bottom 60px
+	margin-right 10px
+.box-bg
+	background-color #fff
+
+.box-bg2
+	background-color #fff
+	border-radius: 5px;
+
+.section-top-width--control
+	width 1152px
+.right-side
+	background-color #f2f2f2;
+
+
+//Модули
+@import "modules/modules.styl"
+
+// СТРАНИЦЫ
+// Главная страница
+@import 'pages/index.styl'
+
+@import "pages/role.styl"
+
+@import "pages/users.styl"
+
+@import "pages/support.styl"
+
+@import "pages/content.styl"
+
+@import "pages/other-styles.styl"
+
+@import "dop-styles.styl"
+
+@import "media.styl"
+

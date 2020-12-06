@@ -1,0 +1,325 @@
+section.section-1
+    .section-top-side.section-overflow-top-side2.box-bg2.mb-30
+        .section-users--tabs
+            .section-users--tab.active(data-tab-users="cat-razdel") Раздел каталога
+            .section-users--tab(data-tab-users="cat-seo") SEO
+    .section-tabs-wrapper.section-user--dropdown__wrap.cat-razdel.active      
+        .section-content-main__titles Изменить категорию услуг
+        .section-content--main__wrap.box-bg2
+            .section-content--main
+                .section-top-side
+                    .section-block-title-question
+                        .section-block--title Общая информация
+                .section-table-style--items 
+                    .section-table-style--item ID: 
+                        span 65       
+                    .section-table-style--item Создан:
+                        span 03.11.2018 01:20:35 
+                            a.color-blue(href="/") [1] 
+                            | <Без имени>      
+                    .section-table-style--item Изменен:
+                        span 21.11.2018 13:47:51
+                            a.color-blue(href="/") [2]
+                            | Разработчик Приложения 
+                .filter-balance-bottom.row.m-0.p-12-0
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Родительский раздел:
+                        .section-select--input2.section-select--input__show
+                            span Верхний уровень
+                            .section-select--popup__icon
+                                +icon('arrow-down-white')
+                            ul.section-select--popup__list.section-select--popup__list__show
+                                li.section-select--popup__item2.hover-text-color Любой
+                                li.section-select--popup__item2.hover-text-color Любой2
+                                li.section-select--popup__item2.hover-text-color Любой3     
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap.checkbox-popup-filter_mb
+                        .checkbox-input--tab__item 
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span Раздел активен  
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Название:
+                        input.input-main.mask-phone(type="text" placeholder="Оформление гражданства")  
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-input-wrap
+                        label Символьный код:
+                        input.input-main.mask-phone(type="text" placeholder="Oformleniye grazhdanstva")
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-12.section-user--dropdown__img
+                        label Изображение:
+                        .section-user--dropdown-and-more
+                            .section-user--dropdown__img--wrap
+                                .section-user--dropdown__img--zone
+                                input#user-photo.dropdown-img(type="file")
+                                .section-user--dropdown__img--info (Drag&Drop) #[span Перетащите файл]    
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-tiny-wrap
+                        .d-flex.justify-content-between.align-items-center
+                            label Описание для анонса
+                            ul.section-users--tabs.section-users-mobile.section-upper-modal
+                                +tabsLink('trip-archive','Текст')(class="editor-text")
+                                +tabsLink('trip-all','HTML')(class="editor-html")
+                                +tabsLink('trip-archive','Редактор')(class="active" class="mr-0" class="editor-edit")
+                            .section-dotted-mobile.gogocar-arrow-button.sdm-gray  
+                                +icon('dots') 
+                        .section-tiny-side
+                            .section-text-options.active.justify-content-between
+                                .d-flex
+                                    .section-text-option__item(data-edit-type="bold")
+                                        +icon('bold-text')
+                                    .section-text-option__item(data-edit-type="italic")
+                                        +icon('cursive')
+                                    .section-text-option__item(data-edit-type="underline")
+                                        +icon('underline-text')
+                                    .section-text-option__item(data-edit-type="formatblock" data-edit-value="blockquote")
+                                        +icon('quote')
+                                    .section-text-option__item(data-edit-type="insertunorderedlist")
+                                        +icon('list')
+                                    .section-text-option__item(data-edit-type="insertorderedlist")
+                                        +icon('numbers')
+                                    .section-text-option__item(data-edit-type="fontsize-smaller")
+                                        +icon('font')
+                                    .section-text-option__item(data-edit-type="fontsize-bigger")
+                                        +icon('line')
+                                    .section-text-option__item(data-edit-type="createLink")
+                                        +icon('link')          
+                                .d-flex
+                                    .section-text-option__item(data-edit-type="undo")
+                                        +icon('undo') 
+                                    .section-text-option__item(data-edit-type="redo").mr-0
+                                        +icon('undo','undo-rotate')                                                                           
+                            .textarea-text-option--wrap
+                                .textarea-text-option(contenteditable="true") Ответ...
+                                textarea.textarea-text-plaintext Ответ... 
+                .section-footer-side
+                    .section-buttons--wrap 
+                        .section-button--yellow.w-100px.mr-3 Сохранить
+                        .section-button--gray.w-100px.mr-3 Применить
+                        .section-button--gray.w-100px Отменить
+    .section-tabs-wrapper.section-user--dropdown__wrap.cat-seo
+        .section-content-main__titles Настройки SEO информации
+        .section-content--main__wrap.box-bg2
+            .section-content--main
+                .section-top-side
+                    .section-block-title-question
+                        .section-block--title Настройки SEO информации
+                .section-table-style--items.row.m-0.p-12-0 
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон META TITLE
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для этого раздела и его подразделов #[a.color-blue(href="/") (Оформление ВНЖ)] 
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон META KEYWORDS:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для этого раздела и его подразделов #[a.color-blue(href="/") (Оформление ВНЖ)]   
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон META DESCRIPTION:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для этого раздела и его подразделов #[a.color-blue(href="/") (Оформление ВНЖ)]   
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Заголовок раздела:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для этого раздела и его подразделов #[a.color-blue(href="/") (Оформление ВНЖ)]  
+                .section-top-side
+                    .section-block-title-question
+                        .section-block--title Настройки для элементов  
+                .section-table-style--items.row.m-0.p-12-0      
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон META TITLE:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для этого элемента 
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон META KEYWORDS:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для этого элемента   
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон META DESCRIPTION:  
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для этого элемента 
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Заголовок элемента:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для этого элемента     
+                .section-top-side
+                    .section-block-title-question
+                        .section-block--title Настройки для изображений разделов 
+                .section-table-style--items.row.m-0.p-12-0      
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон ALT:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для элементов этого раздела и его подразделов.       
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон TITLE:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для элементов этого раздела и его подразделов.
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон имени файла:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .d-flex.mt-2        
+                            .checkbox-input--tab__item.mr-3
+                                .checkbox-input
+                                input.checkbox-input--tab(type="checkbox") 
+                                span.ff-OS3 Изменить для элементов этого раздела и его подразделов.
+                            .checkbox-input--tab__item.mr-3
+                                .checkbox-input
+                                input.checkbox-input--tab(type="checkbox") 
+                                span.ff-OS3 Привести к нижнему регистру 
+                            .checkbox-input--tab__item
+                                .checkbox-input
+                                input.checkbox-input--tab(type="checkbox") 
+                                span.ff-OS3 Транслитерировать
+                .section-top-side
+                    .section-block-title-question
+                        .section-block--title Настройки для детальных картинок разделов
+                .section-table-style--items.row.m-0.p-12-0      
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон ALT:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для элементов этого раздела и его подразделов.       
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон TITLE:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для элементов этого раздела и его подразделов.
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон имени файла:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .d-flex.mt-2      
+                            .checkbox-input--tab__item.mr-3
+                                .checkbox-input
+                                input.checkbox-input--tab(type="checkbox") 
+                                span.ff-OS3 Изменить для элементов этого раздела и его подразделов.
+                            .checkbox-input--tab__item.mr-3
+                                .checkbox-input
+                                input.checkbox-input--tab(type="checkbox") 
+                                span.ff-OS3 Привести к нижнему регистру 
+                            .checkbox-input--tab__item
+                                .checkbox-input
+                                input.checkbox-input--tab(type="checkbox") 
+                                span.ff-OS3 Транслитерировать     
+                .section-top-side
+                    .section-block-title-question
+                        .section-block--title Настройки для картинок анонса элементов
+                .section-table-style--items.row.m-0.p-12-0      
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон ALT:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для элементов этого раздела и его подразделов.       
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон TITLE:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .checkbox-input--tab__item.mt-2
+                            .checkbox-input
+                            input.checkbox-input--tab(type="checkbox") 
+                            span.ff-OS3 Изменить для элементов этого раздела и его подразделов.
+                    .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                        label Шаблон имени файла:
+                        .section-input-main__wrapper
+                            input.input-main(type="text") 
+                            .section-input-main__wrapper--icon 
+                                +icon('dots')
+                        .d-flex.mt-2        
+                            .checkbox-input--tab__item.mr-3
+                                .checkbox-input
+                                input.checkbox-input--tab(type="checkbox") 
+                                span.ff-OS3 Изменить для элементов этого раздела и его подразделов.
+                            .checkbox-input--tab__item.mr-3
+                                .checkbox-input
+                                input.checkbox-input--tab(type="checkbox") 
+                                span.ff-OS3 Привести к нижнему регистру 
+                            .checkbox-input--tab__item
+                                .checkbox-input
+                                input.checkbox-input--tab(type="checkbox") 
+                                span.ff-OS3 Транслитерировать                                
+                                       
+                                                                                                       
+                .filter-balance-bottom.row.m-0.p-12-0
+                    
+                .section-footer-side
+                    .section-buttons--wrap 
+                        .section-button--yellow.w-100px.mr-3 Сохранить
+                        .section-button--gray.w-100px.mr-3 Применить
+                        .section-button--gray.w-100px Отменить

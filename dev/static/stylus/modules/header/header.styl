@@ -1,0 +1,94 @@
+header
+  display flex
+  align-items center
+  justify-content space-between
+  padding 10px 30px
+.header-nav-left
+  display flex
+.header-nav-left--back
+  margin-right 25px
+  .icon
+    size(16px)
+.header-logo
+  .icon
+    size(40px)
+.header-right--message
+  position relative
+  margin-right 30px
+  cursor pointer
+  .icon
+    size(20px)
+.header-right--message__notification:before
+  content ''
+  position absolute
+  right: -4px;
+  top: 4px;
+  background-color #2F80ED
+  box-shadow 0 0 3px 1px #2F80ED
+  border-radius 50%
+  size(8px)
+  min-width 6px
+.header-nav-right
+  display flex
+  align-items center
+.header-right-choise--lang
+  display flex
+  align-items center
+  justify-content space-between
+  position relative
+  border: 1px solid rgba(39, 39, 39, 0.1);
+  border-radius 5px
+  padding 8px 11px
+  cursor pointer
+.header-right-choise--lang__wrap
+  position relative
+.choise-lang__img
+  display flex
+  justify-content center
+  align-items center
+  background-position center
+  background-repeat no-repeat
+  background-size contain
+  size(24px)
+  margin-right 17px
+
+.choise-lang__arrow
+  .icon
+    size(15px)
+    stroke #000
+
+.choise-lang--list
+  position absolute
+  display none
+  left 0
+  top 50px
+  right 0
+  width 100%
+  background: #fff;
+  box-shadow: 0px 0px 40px rgba(27, 33, 43, 0.3);
+  border-radius: 5px;
+  padding 8px 11px
+  z-index 5
+.choise-lang--item
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 6px
+  cursor pointer
+
+  &:last-child
+    margin-bottom 0
+.choise-lang--item__img
+  background-size contain
+  background-repeat no-repeat
+  size(20px)
+  background-position center
+
+.choise-lang--item__text
+  color #272727
+  font-family 'Montserrat 500',sans-serif
+  font-size 14px
+.filter-show-and-hide
+  .icon 
+    size(24px !important)  
+

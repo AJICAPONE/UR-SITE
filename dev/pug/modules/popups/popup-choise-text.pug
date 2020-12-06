@@ -1,0 +1,44 @@
+#popup-choise-text.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        form.modal-content
+            .popup-header
+                .popup-close--icon.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+                h3.popup-title Выберите ответ
+            .popup-input--wrap.row
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap.popup-input--wrap
+                    input.input-main(type="text" placeholder="Искать...")
+                    .popup-input--icon__search
+                        +icon('search')
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                    .section-select--input2.section-select--input__show
+                        span Категория
+                        .section-select--popup__icon
+                            +icon('arrow-down-white')
+                        ul.section-select--popup__list.section-select--popup__list__show
+                            li.section-select--popup__item2.hover-text-color 1
+                            li.section-select--popup__item2.hover-text-color 2
+                            li.section-select--popup__item2.hover-text-color 3
+            .popup-choise--list
+                .popup-choise--item
+                    .popup-choise--top
+                        .popup-choise--top__title Не работает форма обратной связи
+                        .popup-choise--top__button Выбрать
+                    p.popup-choise--text Vulputate venenatis pulvinar pharetra, ipsum accumsan. Egestas at vestibulum pellentesque dui vestibulum. Sit vitae in felis bibendum. Sit magnis morbi nisi, proin.
+                    .popup-choise--bottom www.incity/faq/answer№2
+                .popup-choise--item
+                    .popup-choise--top
+                        .popup-choise--top__title Не работает форма обратной связи
+                        .popup-choise--top__button Выбрать
+                    p.popup-choise--text Vulputate venenatis pulvinar pharetra, ipsum accumsan. Egestas at vestibulum pellentesque dui vestibulum. Sit vitae in felis bibendum. Sit magnis morbi nisi, proin.
+                    .popup-choise--bottom www.incity/faq/answer№2
+                .popup-choise--item
+                    .popup-choise--top
+                        .popup-choise--top__title Не работает форма обратной связи
+                        .popup-choise--top__button Выбрать
+                    p.popup-choise--text Vulputate venenatis pulvinar pharetra, ipsum accumsan. Egestas at vestibulum pellentesque dui vestibulum. Sit vitae in felis bibendum. Sit magnis morbi nisi, proin.
+                    .popup-choise--bottom www.incity/faq/answer№2
+
+            //.popup-section-button
+            //    .section-button--gray.close(data-dismiss="modal" aria-label="Close") Отменить
+            //    button.section-button--yellow.section-button--red(type="submit") Применить

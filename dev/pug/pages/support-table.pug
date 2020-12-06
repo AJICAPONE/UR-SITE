@@ -1,0 +1,12 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Поддержка (Справочники, категории)'
+    - var pageClass = 'index-page'
+
+block content
+    include support-table/section1
+    .section-reports-wrap.row.m-15
+        include support-table/section2
+        include support-table/section3
+

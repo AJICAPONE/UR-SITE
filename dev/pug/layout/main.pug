@@ -1,0 +1,38 @@
+include ../mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		<!--[if IE]>
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		<![endif]-->
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+
+		link(rel="stylesheet" type='text/css' href="static/css/main.css")
+
+		<!--[if lt IE 9]>
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+		<![endif]-->
+	body(class=pageClass)
+		.wrapper
+			.left-and-right-side
+				include ../modules/sidebar
+				.col-xl-9_5.col-lg-9.col-md-8.col-sm-12.right-side
+					include ../modules/header
+					.content
+						block content
+			include ../modules/popups/popup-add
+			include ../modules/popups/popup-rem
+			include ../modules/popups/popup-del
+			include ../modules/popups/popup-choise-text
+		script(src="static/js/jquery.min.js")
+		script(src="static/js/libs.min.js")
+		script(src="static/js/main.js")
+		script(src="static/js/jquery.simplePagination.js")
+		script(src="static/js/datepicker.js")
+		script(src="static/js/datepicker.ru-RU.js")
+		block script

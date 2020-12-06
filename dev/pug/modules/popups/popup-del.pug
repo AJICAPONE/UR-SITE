@@ -1,0 +1,11 @@
+#popup-seo-per.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered(role='document')
+        form.modal-content
+            .popup-header
+                .popup-close--icon.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+                h3.popup-title.mb-5 Вы в одном шаге от #[span Перезаписи] настроек!
+                p.popup-desc Вы уверены ? #[span Это действие нельзя отменить, все старые данные будут перезаписаны !]
+                .delete-chat-msg.justify-content-center
+                    .gogocar-gray-button.mr-3(data-dismiss="modal" aria-label="Close") Я передумал
+                    .delete-choise-chat-msg.gogocar-red-button.mr-0(data-dismiss="modal" aria-label="Close") Применить

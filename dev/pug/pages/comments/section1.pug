@@ -1,0 +1,31 @@
+section.section-1
+    .filter-main.box-bg2
+        include ../../modules/filters/filter-top
+        .section-bottom-side.filter-balance-bottom.row.m-0.p-12-0
+            .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                label Пользователь:
+                input.input-main(type="text" placeholder="Пользователь...")
+            .col-xl-4.col-lg-4.col-md-4.col-sm-6.section-input-wrap
+                label Интервал:
+                .section-select--input2.section-select--input__show
+                    span Не установлен
+                    .section-select--popup__icon
+                        +icon('arrow-down-white')
+                    ul.section-select--popup__list.section-select--popup__list__show
+                        li.section-select--popup__item2.hover-text-color.calendar-destroy День
+                        li.section-select--popup__item2.hover-text-color.calendar-destroy Месяц
+                        li.section-select--popup__item2.hover-text-color.calendar-destroy Год
+            .col-xl-8.col-lg-8.col-md-8.col-sm-6.section-balance-filter--date.balance-filter--date__wrap--row
+                label Дата:
+                .section-balance-filter--date__wrap
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                        .section-balance-filter-date__wrap
+                            input.input-main.calendar-filter-today.calendar-zone-height(type="text")
+                            .section-balance-date--icon
+                                +icon('calendar2')
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                        .section-balance-filter-date__wrap
+                            input.input-main.calendar-filter.calendar-zone-height(type="text")
+                            .section-balance-date--icon
+                                +icon('calendar2')
+            

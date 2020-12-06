@@ -1,0 +1,44 @@
+section.section-1
+    .filter-main.box-bg2
+        .section-top-side
+            .section-block--title Отчет о прибыли
+            .filter-side--right
+                .filter-settings.gogocar-arrow-button
+                    +icon('settings')
+                .filter-show-and-hide.gogocar-arrow-button
+                    +icon('arrow-down-white')
+        .section-bottom-side.filter-balance-bottom.row.m-0
+            .col-xl-12.col-lg-12.col-md-12.col-sm-6.section-input-wrap.p-0
+                label Автор:
+                .section-select--input2.section-select--input__show
+                    span Автор...
+                    .section-select--popup__icon
+                        +icon('arrow-down-white')
+                    ul.section-select--popup__list.section-select--popup__list__show
+                        li.section-select--popup__item2.hover-text-color 1
+                        li.section-select--popup__item2.hover-text-color 2
+                        li.section-select--popup__item2.hover-text-color 3
+            .col-xl-4.col-lg-4.col-md-4.col-sm-4.section-input-wrap.pl-0
+                label Интервал:
+                .section-select--input2.section-select--input__show
+                    span Месяц
+                    .section-select--popup__icon
+                        +icon('arrow-down-white')
+                    ul.section-select--popup__list.section-select--popup__list__show
+                        li.section-select--popup__item2.hover-text-color 1
+                        li.section-select--popup__item2.hover-text-color 2
+                        li.section-select--popup__item2.hover-text-color 3
+            .col-xl-8.col-lg-8.col-md-8.col-sm-6.section-balance-filter--date.p-0
+                label Дата:
+                .section-balance-filter--date__wrap
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap.pl-0.pr-0
+                        .section-balance-filter-date__wrap
+                            input.input-main.calendar-filter-today.calendar-zone-height(type="text")
+                            .section-balance-date--icon
+                                +icon('calendar')
+
+                    .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap.pr-0
+                        .section-balance-filter-date__wrap
+                            input.input-main.calendar-filter.calendar-zone-height(type="text")
+                            .section-balance-date--icon
+                                +icon('calendar')

@@ -1,0 +1,54 @@
+section.section-1
+    .section-content--main__wrap.box-bg2.pb-0
+        .section-content--main
+            .section-top-side
+                .section-block--title Редактировать (Уровень поддержки)
+            form.section-support-form
+                .section-bottom-side
+                    .section-inputs--wrapper.row
+                        .col-xl-12.col-lg-12.col-md-12.col-sm-6.section-input-wrap
+                            label Название:
+                            input.input-main(type="text" placeholder="По умолчанию")
+                        .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                            label За сколько до окончания времени реакции выслать напоминание по Email:
+                            .section-time-input--wrap
+                                input.input-main(type="text")
+                                .section-select--input__time
+                                    .section-select--input__time--text Ч.
+                                    +icon('arrow-down-white')
+                                    ul.section-select--input__time__list
+                                        li.section-select--input__time__item.hover-text-color Ч.
+                                        li.section-select--input__time__item.hover-text-color М.
+                                        li.section-select--input__time__item.hover-text-color Д.
+
+
+
+                        .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                            label Ответсвенный по умолчанию:
+                            .section-select--input2.section-select--input__show
+                                span
+                                .section-select--popup__icon
+                                    +icon('arrow-down-white')
+                                ul.section-select--popup__list.section-select--popup__list__show
+                                    li.section-select--popup__item2.hover-text-color 1
+                                    li.section-select--popup__item2.hover-text-color 2
+                                    li.section-select--popup__item2.hover-text-color 3
+                        .col-xl-12.col-lg-12.col-md-12.col-sm-6.section-input-wrap
+                            label Описание:
+                            textarea.textarea-input(cols="5" rows="4")
+                        .col-xl-12.col-lg-12.col-md-12.col-sm-6.section-label-select--wrap
+                            label Группы пользователей:
+                            .section-select--input.section-select-create--item.section-select--input__show
+                                span.section-bg-text--content Выбрать..
+                                .section-yellow-bg--wrap
+                                .section-select--popup__icon
+                                    +icon('arrow-down-white')
+                                ul.section-select--popup__list
+                                    li.section-select--popup__item.hover-text-color Техподдержка
+                                    li.section-select--popup__item.hover-text-color Admin
+
+
+                .section-footer-side
+                    .section-buttons--wrap
+                        button.section-button--yellow.w-100px.mr-3(type="submit") Сохранить
+                        .section-button--gray.w-100px Отменить

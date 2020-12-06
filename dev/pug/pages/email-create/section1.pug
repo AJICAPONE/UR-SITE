@@ -1,0 +1,88 @@
+section.section-1
+    .section-content--main__wrap.box-bg2.pb-0
+        .section-content--main
+            .section-top-side
+                .section-top-block--back
+                    .section-top-block--back__item
+                        +icon('arrow-left','arrow-rotate')
+                    .section-block--title Шаблон “pay course”
+            .section-bottom-side.row.pr-0.pl-0.m-0
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                    label Название:
+                    input.input-main(type="text" placeholder="pay course")
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                    label Условное обозначение:
+                    input.input-main(type="text" placeholder="pay_course")
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                    label из:
+                    input.input-main(type="text" placeholder="mind-formula")
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                    label в:
+                    input.input-main(type="text" placeholder="user")
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                    label Тема:
+                    input.input-main(type="text" placeholder="MindFormula: Вы успешно оплатили курс «#course_title#»")
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                    label Мероприятие:
+                    input.input-main(type="text" placeholder="pay course")
+                .col-xl-3.col-lg-4.col-md-5.col-sm-6.section-input-wrap.justify-content-end
+                    label Прикрепление:
+                    .section-file-info-add2.sfia2.sfia-100
+                        +icon('skrepka2')
+                        span Загрузка фото
+                        input.section-file-info-add__input2(type="file")
+                .col-xl-2.col-lg-3.col-md-2.col-sm-6.section-input-wrap.justify-content-center.mb-0.mobile-mb-30
+                    .checkbox-input--tab__item
+                        .checkbox-input
+                        input.checkbox-input--tab(type="checkbox")
+                        span active
+                .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-tiny-wrap
+                        .d-flex.justify-content-between.align-items-center
+                            label Тело
+                            ul.section-users--tabs.section-users-mobile.section-upper-modal
+                                +tabsLink('trip-archive','Текст')(class="editor-text" class="ed-mr-0")
+                                +tabsLink('trip-all','HTML')(class="editor-html2" class="active" class="mr-0")
+                            .section-dotted-mobile.gogocar-arrow-button.sdm-gray
+                                +icon('dots')
+                        .section-tiny-side
+                            .section-text-options.active.justify-content-between
+                                .d-flex
+                                    .section-text-option__item(data-edit-type="bold")
+                                        +icon('bold-text')
+                                    .section-text-option__item(data-edit-type="italic")
+                                        +icon('cursive')
+                                    .section-text-option__item(data-edit-type="underline")
+                                        +icon('underline-text')
+                                    .section-text-option__item(data-edit-type="formatblock" data-edit-value="blockquote")
+                                        +icon('quote')
+                                    .section-text-option__item(data-edit-type="insertunorderedlist")
+                                        +icon('list')
+                                    .section-text-option__item(data-edit-type="insertorderedlist")
+                                        +icon('numbers')
+                                    .section-text-option__item(data-edit-type="fontsize-smaller")
+                                        +icon('font')
+                                    .section-text-option__item(data-edit-type="fontsize-bigger")
+                                        +icon('line')
+                                    .section-text-option__item(data-edit-type="createLink")
+                                        +icon('link')
+                                .d-flex
+                                    .section-text-option__item(data-edit-type="undo")
+                                        +icon('undo')
+                                    .section-text-option__item(data-edit-type="redo").mr-0
+                                        +icon('undo','undo-rotate')
+                            .textarea-text-option--wrap
+                                .textarea-text-option(contenteditable="true") Ответ...
+                                textarea.textarea-text-plaintext Ответ...
+                .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                    label SMS Text:
+                    textarea.textarea-input(cols="5" rows="10" placeholder="Здравствуйте, #user_name# Вы начали обучение по курсу «#course_title#». Если у вас возникли сложности в обучении вы можете отправить сообщение в чат преподавателю")
+                .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                    label Viber Text:
+                    textarea.textarea-input(cols="5" rows="10" placeholder="Здравствуйте, #user_name# Вы начали обучение по курсу «#course_title#». Если у вас возникли сложности в обучении вы можете отправить сообщение в чат преподавателю")
+                .col-xl-12.col-lg-12.col-md-12.col-sm-12.section-input-wrap
+                    label Telegram Text:
+                    textarea.textarea-input(cols="5" rows="10" placeholder="Здравствуйте, #user_name# Вы начали обучение по курсу «#course_title#». Если у вас возникли сложности в обучении вы можете отправить сообщение в чат преподавателю")
+            .section-footer-side
+                .section-buttons--wrap
+                    button.section-button--yellow.w-100px.mr-3(type="submit") Сохранить
+                    .section-button--gray.w-100px Отменить

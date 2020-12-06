@@ -1,0 +1,343 @@
+.section-user--dropdown__img
+  margin-bottom 20px
+  label
+    font-family 'Oswald 500',sans-serif
+    font-size 18px
+    color #272727
+.section-user--dropdown-and-more
+  display flex
+.section-user--more
+  position relative
+  background-color #424B5B
+.section-user--dropdown__img--wrap
+  position relative
+  display flex
+  justify-content center
+  align-items center
+  background: #F9F9F9;
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  width 255px
+  height 300px
+  margin-right 15px
+.dropdown-img
+  position absolute
+  right 0
+  left 0
+  top 0
+  bottom 0
+  line-height 0
+  opacity 0
+  z-index 2
+  cursor pointer
+.section-user--dropdown__img--info
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  color rgba(39, 39, 39, 0.6)
+  font-family 'Open Sans 400',sans-serif
+  font-size 15px
+.section-user--dropdown__img--zone
+  position absolute
+  right 0
+  left 0
+  top 0
+  bottom 0
+  width 100%
+  height 100%
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  border-radius 5px
+
+.section-user--more--popup
+  position absolute
+  display none
+  left -10px
+  top 62px
+  background: #424b5b
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  width 247px
+  z-index 5
+  &:after
+    content ''
+    position absolute
+    left 20px
+    top -19.5px
+    clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
+    background-color #424b5b
+    size(20px)
+    z-index 4
+.section-user--more--popup__item
+  display flex
+  align-items center
+  padding 12.5px 15px
+  height 55px
+  cursor pointer
+  transition all linear .1s
+  .icon
+    size(19px)
+    margin-right 15px
+  .icon-delete
+    fill #EF4037
+  &:first-child
+    padding-bottom 12.5px
+    margin-bottom 0
+    border-radius: 5px 5px 0px 0px;
+  &:last-child
+    padding-top 12.5px
+    border-radius: 0px 0px 5px 5px;
+  &:hover
+    background-color #3c4452
+
+  span
+    color #fff
+    font-family 'Open Sans 600',sans-serif
+    font-size 14px
+  &:last-child
+    margin-bottom 0
+
+.section-user--dropdown__wrap
+  display none
+.section-user--dropdown__wrap.active
+  display block
+.section-footer-side
+  padding 12px 15px
+  border-top: 1px solid rgba(153, 163, 181, 0.3);
+
+.section-user-files
+  display flex
+  align-items center
+  background-color rgba(66, 75, 91, 0.7)
+  border-radius 5px
+  margin-right 10px
+  height 42px
+  padding 8px 10px
+
+  &:hover
+    text-decoration none
+
+  .icon
+    margin-right 10px
+    size(26px)
+
+
+  span
+    font-family 'Open Sans 400',sans-serif
+    font-size 12px
+    color rgba(255, 255, 255, 0.6)
+.section-user-flex
+  flex-direction initial
+  margin 0
+.section-user-files--more
+  background-color #3E4756
+  size(42px)
+
+.section-checkbox-files
+  display flex
+  align-items center
+  justify-content space-between
+  width 100%
+
+.section-user-flex--item,.section-car-tabs--list2
+  display flex
+  align-items center
+  margin-right 40px
+.section-driver-rules--category
+  display flex
+  justify-content flex-start
+  height 100%
+  //overflow hidden
+  min-height 42px
+  max-height 42px
+.section-driver-rules--category__item
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  background-color: #fdbf5a;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 2.5px 5px 2.5px 0px;
+  color: #fff;
+  z-index: 5;
+.section-driver-rules--category p
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  background-color: #fdbf5a;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin: 2.5px 5px 2.5px 0px;
+  color: #fff;
+  z-index: 5;
+.section-users-balance--icon
+  display flex
+  justify-content center
+  align-items center
+  size(50px)
+  background-color rgba(255, 255, 255, 0.1)
+  border-radius 10px
+  position relative
+  cursor pointer
+  .icon
+    size(32px)
+.section-users-balance--plus
+  margin-right 15px
+  &:before
+    content '+'
+    display flex
+    justify-content center
+    align-items center
+    color #fff
+    font-family 'Open Sans 400',sans-serif
+    font-size 14px
+    size(16px)
+    position absolute
+    right: 7px;
+    bottom: 6px;
+    background-color #09B983
+    border-radius 50%
+.section-users-balance--minus
+  &:before
+    content '–'
+    display flex
+    justify-content center
+    align-items center
+    color #fff
+    font-family 'Open Sans 400',sans-serif
+    font-size 14px
+    size(16px)
+    position absolute
+    right: 7px;
+    bottom: 6px;
+    background-color #F37535
+    border-radius 50%
+.section-users-balance--right
+  display flex
+  align-items center
+
+
+.section-users-balance--content
+  display flex
+  justify-content space-between
+  align-items center
+  margin 0 -15px
+  padding 12px 15px
+  background-color #424B5B
+.section-users-balance--title
+  font-family 'Open Sans 400',sans-serif
+  font-size 13px
+  color #fff
+  margin-bottom 5px
+.section-users-balance--count
+  font-family 'Open Sans 400',sans-serif
+  font-size 16px
+  color #2F80ED
+.section-balance-filter--date
+  display flex
+  flex-direction column
+  label
+    color #272727
+    font-family 'Oswald 500',sans-serif
+    font-size 12px
+.section-balance-filter--date__wrap
+  display flex
+.section-balance-filter-date__wrap
+  display flex
+  align-items center
+  position relative
+.section-balance-date--icon
+  display flex
+  justify-content center
+  align-items center
+  position absolute
+  right 10px
+  .icon
+    size(20px)
+.calendar-filter-today,.calendar-filter
+  padding-right 40px
+  text-align center
+.section-balance--filter
+  display none
+.section-body-checkbox__off
+  display none
+.section-body-checkbox__input__off
+  position relative
+  width 40px
+  height 24px
+  background: rgba(120, 120, 128, 0.4);
+  border-radius: 12px;
+  cursor pointer
+  transition all linear .2s
+  &:before
+    content ''
+    size(20px)
+    background-color #fff
+    border-radius 50%
+    min-width 20px
+    absolute-center()
+    left 13px
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+    transition all linear .2s
+    will-change transform
+
+.section-body-checkbox__input__off.checked:before
+  left 27.5px
+.section-body-checkbox__input__off.checked
+  background-color #FDAB3E
+.section-tbody--icon
+  position relative
+.section-tbody--modal--table,.section-sup--modal--table
+  position: absolute;
+  display: none;
+  left: -20px;
+  //top: 62px;
+  transform: translateY(17px);
+  background: #fff
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  width: 247px;
+  z-index: 5;
+  &:after
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: -19.5px;
+    clip-path: polygon(50% 15%, 0% 100%, 100% 100%);
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    z-index: 4;
+.section-tbody--modal--item
+  display: flex;
+  align-items: center;
+  padding: 12.5px 15px;
+  height: 55px;
+  cursor: pointer;
+  transition: all linear 0.1s;
+  &:hover
+    background-color: #f9f9f9;
+  .icon
+    size(19px)
+    margin-right 15px
+    opacity 1
+    stroke: none
+    fill: #2F80ED
+  span
+    color: #272727;
+    font-family: 'Open Sans 600', sans-serif;
+    font-size: 14px;
+
+.section-operation
+  display none
+
+.section-chat
+  display none
+
+
+
+

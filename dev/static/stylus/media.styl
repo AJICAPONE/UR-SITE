@@ -1,0 +1,737 @@
+@media screen and (max-width 1366px)
+  .section-tiny-wrap.editor-item .section-text-options
+    flex-wrap: wrap
+    height auto
+  .editor-item--flex
+    flex-wrap: wrap
+
+  .editor-img--border__radius,.editor-block--border__radius
+    margin-bottom: 10px
+  .editor-icon-cep
+    display none
+
+@media screen and (max-width: 1199px)
+  .section-user-flex--item
+    margin-bottom 20px
+  .section-sidebar-editor
+    display none
+  .reveiw-tab-text--wrap
+    flex-direction: column
+  .review-tab-text__img
+    display none
+  .reveiw-tab-text--item
+    width: 100%
+  .section-reviews-content .reveiw-tab-text--item
+    border-left: 1px solid rgba(39,39,39,0.1);
+    margin-bottom: 40px
+  .faq-left svg
+    size(310px)
+@media screen and (max-width: 991px)
+  .section-content-block--item__right
+    display none
+  .section-content-block--item__left
+    width 100%
+  .price-body-top-d-flex
+    flex-direction: column
+    align-items: flex-end;
+  .section-read-article--wrap
+    flex-direction: column
+  .section-read-article--left__icon
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 6px;
+  .section-read-article--wrap
+    position relative
+    align-items: flex-start;
+  .section-read-article--left span, .section-read-article--right
+     margin-left: 55px;
+  .section-have-question--wrap
+    flex-direction: column
+  .section-have-question__left
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  .section-have-question__right
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  .scbi-2 .section-content-block--item__left
+    width 100%
+
+  .section-title--wrap
+    flex-direction: column
+    .section-title
+      margin-bottom: 45px !important;
+      width 100%
+  .blog-button-item
+    width 130px
+  .section-buttons-block
+    margin-right: 20px;
+    flex-direction: column
+    .section-button-blue--v1
+      margin-right: 0
+      width 100% !important
+      margin-bottom: 25px
+  .chats-fixed
+    position: fixed
+    top: 0
+    left 0
+    right 0
+    bottom: 0
+    transform: translateX(-100vw)
+    transition: .4s ease
+    width 100%
+    padding: 0 !important
+    padding-bottom: 0
+  .mogile-go-back-button
+    display flex
+  .chat-container-main
+    height calc(100% - 150px) !important
+  .pr-right-30
+    padding-right: 30px
+  .chats-fixed.active
+    transform: translateX(0)
+  .section-upper-modal:after, .section-upper-modal__calendar:after
+    background-color: rgba(39,39,39,0.3) !important
+  .section-upper-modal__calendar label
+    margin-left: 0 !important
+  .pr-50
+    padding-right 30px
+  .section-role--row
+    min-width 600px
+  .content
+    margin-right 0
+  .content::-webkit-scrollbar
+    display none
+  .section-reports-right--calendar
+    display none
+  .section-reports-date-list
+    display none
+  .section-reports-date-list__mobile
+    display block
+    .section-reports-date-item
+        font-family: 'Open Sans 400', sans-serif;
+        font-size: 14px;
+        color: #272727;
+        margin-bottom: 30px;
+    .section-reports-date-item.active
+      color #2F80ED
+  .section-reports-mobile--wrap
+    display flex
+    .section-upper-modal,.section-upper-modal__calendar
+      display flex
+      flex-direction: column;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      border-radius: 10px 10px 0px 0px;
+      width: 100%;
+      padding: 30px 15px;
+      z-index: 86;
+      padding-top: 50px;
+      transform: translateY(100vh);
+      will-change: transform;
+      transition: 0.5s ease;
+    .section-upper-modal.active,.section-upper-modal__calendar.active
+      transform: translateY(0);
+
+
+@media screen and (max-width: 767px)
+  .faq-main-block
+    flex-direction: column
+  .faq-left,.faq-right
+    width: 100%
+  .blog-button-item
+    width 90px
+  .left-side
+    position fixed !important
+    top 0
+    bottom 0
+    right 0
+    left 0
+    transform translateX(-100vw)
+    will-change transform
+    transition .5s ease
+    z-index 90
+
+
+  .left-side.active
+    transform translateX(0)
+
+  .left-and-right-side
+    &:before
+      content ''
+      position fixed !important
+      opacity 0
+      pointer-events none
+      top 0
+      bottom 0
+      right 0
+      left 0
+      background-color rgba(41, 47, 57, 0.7)
+      z-index 89
+      will-change transform
+      transition .5s ease
+  .left-and-right-side.active
+    &:before
+      content ''
+      position fixed !important
+      opacity 1
+      top 0
+      bottom 0
+      right 0
+      left 0
+      background-color rgba(41, 47, 57, 0.7)
+      z-index 85
+  .header-right--message
+    display none
+  .header-nav-left--back
+    display none
+  .header-nav-left-menu
+    display flex
+    margin-right 20px
+    cursor pointer
+  .header-logout
+    display block
+    margin-left 20px
+    cursor pointer
+    .icon
+      size(35px)
+  .section-balance-filter--date
+    padding-left 15px !important
+  .section-bottom-side
+    margin 0
+  .checkbox-popup-filter_mb
+    margin-bottom: 20px
+
+@media screen and (max-width: 575px)
+  .pr-50
+    padding-right 15px
+  .left-side
+    max-width 83%
+    flex: 0 0 83%;
+  section
+    padding-right 0
+    padding-left 0
+  .box-bg2
+    border-radius 0
+  .nav-sidebar-menu--item--wrap
+    padding-left 15px
+  .nav-sidebar--admin
+    padding 30px 15px
+  header
+    padding 10px 15px
+  .section-user--more
+    display none
+  .section-user--dropdown__img--wrap
+    height 350px
+    margin-right 0
+    width 100%
+    margin-bottom 10px
+  .dropdown-img
+    width 100%
+  .section-users-dropdown--mobile-buttons
+    display flex
+    justify-content space-between
+  .section-user--dropdown-and-more
+    flex-direction column
+  .section-checkbox-files
+    flex-direction column
+  // .filter-main .section-input-wrap
+  //   padding 0
+  .section-balance-filter--date
+    padding 0 !important
+    .section-input-wrap:first-child
+      padding-right 15px
+    .section-input-wrap:last-child
+      padding-left 15px
+  .popup-balance--button
+    margin-bottom 10px
+  .personal-fixed-chat--container
+    position fixed
+    top 0
+    right 0
+    left 0
+    bottom 0
+    transform translateX(0)
+    will-change transform
+    transition .5s ease
+  .personal-fixed-chat--container.active-hide
+    transform translateX(-100vw)
+
+  .gogocar-go-back-chat--mobile
+    position relative
+    background-color rgba(255,255,255, 0.05)
+    left 0
+    margin-right 10px !important
+    size(40px)
+  .chat-container-message--img
+    display none
+  .chat-container-message--info__message
+    margin-left 0 !important
+    margin-right 0 !important
+  .chat-container-header--img
+    size(52px)
+  .chat-container-block
+    border-radius 0
+    height 100%
+  .chat-container-header
+    border-radius 0
+  .chat-container-main--info
+    max-height 100%
+    overflow-x hidden
+  .chat-container--message
+    font-size 12px
+  .chat-container-header--desc
+    font-size 12px
+  .chat-container-message--wrapper
+    max-width 85%
+  .support-time-server
+    display flex
+    flex-direction column
+    font-family 'Oswald 400',sans-serif
+    font-size 14px
+    color #272727
+    span
+      color #2F80ED
+  .section-block--title
+    font-size 16px
+  .sup-mob-hidden
+    display none
+  .sup-mob-tbody
+    tbody
+      tr
+        td:last-child
+          display none
+  .sup-show-in-mobile
+    display flex
+    flex-direction column
+  .section-block--question__content
+    display none
+  .setion-trip-more--item
+    flex-direction column
+    align-items flex-start
+  .section-csv--wrap
+    display none
+  .section-upper-modal,.section-upper-modal__calendar
+    display flex
+    flex-direction column
+    position fixed
+    bottom 0
+    left 0
+    right 0
+    background-color #363D4A
+    border-radius: 10px 10px 0px 0px;
+    width 100%
+    padding 30px 15px
+    z-index 86
+    padding-top 50px
+    transform translateY(100vh)
+    will-change transform
+    transition .5s ease
+    &:after
+      content ''
+      absolute-center()
+      width 35px
+      height 5px
+      top 15px
+      background-color rgba(255,255,255, 0.3)
+      border-radius 3px
+
+    .section-csv-green,.section-csv-yellow
+      height 42px
+      width 100%
+    .section-csv-green
+      margin-bottom 25px
+  .section-upper-modal.active,.section-upper-modal__calendar.active
+    transform translateY(0)
+  .section-dotted-mobile
+    display flex
+    margin-right 11px
+  .section-load-logo
+    margin-left 15px
+    margin-right 15px
+  .section-file-info-add
+    width 100%
+    justify-content center
+  .section-file-info-add2
+    width 100%
+    justify-content center
+  .section-file-info-add2 .icon
+    margin-right 15px
+  .mobile-mb-30
+    margin-bottom 30px !important
+  .section-reports-date-list
+    display none
+
+  .section-reports-date-list__mobile
+    display flex
+    flex-direction column
+    justify-content flex-start
+    align-items flex-start
+    .section-reports-date-item
+      font-family 'Open Sans 400',sans-serif
+      font-size 14px
+      color #272727
+      margin-bottom 30px
+    .section-reports-date-item.active
+      color #2F80ED
+  .section-reports-right--calendar
+    display none
+  .section-reports-mobile--wrap
+    display flex
+  .section-reports-wrap
+    margin 0
+    section
+      padding-left 0
+      padding-right 0
+  .desktop-display-none
+    display none
+  .mobile-padding-0
+    padding-right 0
+    padding-left 0
+  .section-tbody--modal--item
+    padding 0
+    &:hover
+      background-color transparent
+    .icon
+      opacity 1
+      stroke: none
+    span
+      pointer-events: none
+  .section-tbody--modal--table
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #363d4a;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    padding: 30px 15px;
+    z-index: 86;
+    padding-top: 50px;
+    transform: translateY(100vh);
+    will-change: transform;
+    transition: 0.5s ease;
+    &:after
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 35px;
+      height: 5px;
+      top: 15px;
+      background-color: rgba(255,255,255,0.3);
+      border-radius: 3px;
+      clip-path none
+  .section-data-container--item.active
+    .section-tbody--show__popup
+      .section-tbody--modal--table
+        transform: translateY(0);
+
+// Lord Smotri suda
+.section-content-main-mobile--table
+  display none
+
+@media screen and (max-width: 767px)
+  .section-content-main-mobile--table
+    display block
+  .section-content-main--table
+    display none !important
+  .box-bg-mobile2
+    background-color #2F80ED
+    border-radius 5px 5px 0 0
+    .section-block--title
+      color #fff
+  .filter-side--right
+    .section-top-added
+        background-color: rgba(255,255,255, .23)
+        .icon
+          stroke #fff
+          opacity 1
+  .section-bottom-side--mobile__item
+    display flex
+    justify-content space-between
+    align-items center
+    background-color #EFEFEF
+    padding 15px
+    height 50px
+    margin-top 15px
+  .section-bottom-side--mobile__item--name
+    font-family 'Oswald 400',sans-serif
+    font-size 15px
+    color #272727
+  .section-bottom-side--mobile__item--name__flex
+    display flex
+    align-items: center
+    .section-thead-checkbox__input
+      margin-right: 10px
+  .section-arrow-mobile-table.active
+      .icon
+        stroke #2F80ED
+        opacity 1
+  .section-bottom-side--mobile__item--attr
+    display flex
+    align-items center
+    .section-top-added
+      size(36px)
+      &:first-child
+        margin-right 7px
+      .icon-arrow-down-mobile
+        size(22px)
+        transform rotate(180deg)
+  .section-arrow-mobile-table.active
+      .icon-arrow-down-mobile
+        transform rotate(0)
+  .section-bottom-side--mobile__item--wrap
+    display flex
+    flex-direction column
+  .section-mobile-table--item
+    display flex
+    font-family 'Open Sans 400',sans-serif
+    font-size 13px
+    color #fff
+    width 48%
+    margin-bottom 13px
+  .section-bottom-side--mobile__item--content
+    display none
+    flex-wrap wrap
+    justify-content space-between
+    padding 15px
+    background-color #F9F9F9
+    padding-bottom 5px
+  .section-mobile-table--item__left
+    color #737373
+
+    margin-right 5px
+    span
+      color #272727
+  .section-mobile-table--item__right
+    color: #272727
+  .section-tbody--modal--table__mobile
+      display: flex
+      flex-direction: column;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      border-radius: 10px 10px 0px 0px;
+      width: 100%;
+      padding: 30px 15px;
+      z-index: 86;
+      padding-top: 50px;
+      transform: translateY(100vh);
+      will-change: transform;
+      transition: 0.5s ease;
+      &:after
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 35px;
+        height: 5px;
+        top: 15px;
+        background-color: rgba(39,39,39,0.5);
+        border-radius: 3px;
+        clip-path: none;
+
+  .section-tbody--modal--table__mobile.active
+    transform translateY(0)
+  .mt-20px
+    margin-top 20px
+  .pb-20px
+    padding-bottom 20px
+  .content
+    padding-bottom 0
+  .mr-7
+    margin-right 7px
+  .section-mobile-table--item__left
+    .section-author--info_1
+      color #272727
+      span
+        color #2F80ED
+  .section-mobile-table--item__summ,.section-mobile-table--item__sbor
+    font-family 'Oswald 500',sans-serif
+    font-size 16px
+    color #fff
+  .section-report-popup-td .section-tbody--modal--table
+    left 0
+  .section-report-popup-td .section-tbody--modal--table:after
+    left 50%
+  .section-csv-yellow
+    background-color: #fff
+    color: #2F80ED
+    box-shadow: none
+  .section-input-wrap .d-flex.mt-2
+    flex-direction: column
+    .checkbox-input--tab__item
+      margin-bottom: 10px
+  .section-role--table__list
+    width 100%
+    max-width 100%
+
+@media screen and (max-width: 575px)
+  .section-bottom-side--mobile__item--content
+    flex-direction column
+    flex-wrap nowrap
+  .section-mobile-table--item
+    width 100%
+  .section-bottom-pagination
+    width 100%
+    ul
+      //justify-content space-between
+      width 100%
+      li:last-child
+        margin-right 0
+  .section-bottom--delete__mobile
+    display none
+  .box-bg-mobile2
+    border-radius: 0
+  .section-bottom-side--mobile__item--name__flex .section-thead-checkbox__input
+    display none
+  .w-155px
+    width 100%
+  .balance-filter--date__wrap--row
+    margin: 0
+  .section-balance-filter--date label
+    margin-left: 15px
+  .section-dotted-mobile
+    background-color: rgba(255,255,255,0.23);
+    .icon
+      stroke: #fff;
+      opacity: 1;
+  .section-upper-modal
+    background-color: #fff
+    &:after
+      background-color: rgba(39,39,39,0.5)
+  .section-csv-yellow
+    background-color: #2F80ED
+    color: #fff
+  .section-upper-modal .section-users--tab
+    width 100%
+  .section-tiny-wrap .align-items-center
+    margin: 0 -15px
+    padding: 0 15px
+    margin-bottom: 15px
+    padding-bottom: 15px
+    border-bottom: 1px solid #F2F2F2
+  .sdm-gray
+    margin-right: 0
+  .section-tiny-side
+    margin: 0 -15px
+  .section-tiny-side .section-text-options
+    border-radius: 0
+  .section-content-main__titles
+    padding-left: 15px
+  .ed-mr-0
+    margin-right: 0
+  .pr-right-30
+    padding: 30px 0 !important
+  .bg-border
+    border-radius: 0
+  .chat-container-header--info__desk
+    display none
+  .chat-container-header--info__mobile
+    display block
+    a
+      margin-left: 0
+  .chat-delete-out-msg,.chat-show-message-out--mobile,.chat-show-message-in--mobile
+    position: fixed;
+    display: none;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(41,47,57,0.5);
+    border-radius: 0;
+    z-index: 2;
+  .chat-text-delete__message
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Oswald 500', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  .chat-container-option--message--wrap
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  .chat-container-option--message--wrap--buttons
+    flex-direction: column
+  .chat-container-option--message--item .chat-choise-delet-msg,.chat-container-option--message--item--cancel,.chat-answer-message,.chat-container-option--message--wrap--buttons,.chat-choise-delet-msg
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin: 15px;
+    font-size: 14px;
+    font-family: 'Montserrat 500', sans-serif;
+    color: #272727;
+    padding: 15px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  .chat-choise-delet-msg
+    .icon
+      width: 19px;
+      height: 19px;
+      margin-right: 15px;
+      fill: #ff4b55;
+  .chat-container-option--message--item--cancel
+    display flex
+  .section-chat-flex__wrap .section-dialog
+    height calc(100% - 62px)
+  .editor-item
+    padding: 20px 15px
+    .pl-7_5,.pr-7_5
+      padding: 0
+
+    .section-input-wrap:nth-child(3)
+      padding: 0
+
+  .editor-tab-media
+    flex-direction column
+    align-items flex-start
+    height 100%
+    .section-block--title
+      margin-bottom 15px
+    .section-data-tab
+      width 48%
+    .section-data-tabs
+      width 100%
+      justify-content space-between
+
+
+
+
+
+
+
+

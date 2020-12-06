@@ -1,0 +1,37 @@
+section.section-1
+    .section-content--main__wrap.box-bg2.pb-0
+        .section-content--main
+            .section-top-side
+                .section-block--title Добавить (Быстрые ответы)
+            form.section-support-form
+                .section-bottom-side
+                    .section-inputs--wrapper.row
+                        .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                            label Заголовок:
+                            input.input-main(type="text" placeholder="Заголовок")
+                        .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap
+                            label Категория:
+                            input.input-main(type="text" placeholder="Ошибки")
+                        .col-xl-12.col-lg-12.col-md-12.col-sm-6.section-input-wrap
+                            .section-text-options
+                                .section-text-option__item(data-edit-type="bold")
+                                    +icon('bold-text')
+                                .section-text-option__item(data-edit-type="italic")
+                                    +icon('cursive')
+                                .section-text-option__item(data-edit-type="underline")
+                                    +icon('underline-text')
+                                .section-text-option__item(data-edit-type="formatblock" data-edit-value="blockquote")
+                                    +icon('quote')
+                                .section-text-option__item(data-edit-type="insertunorderedlist")
+                                    +icon('list')
+                                .section-text-option__item(data-edit-type="fontsize-smaller")
+                                    +icon('font')
+                                .section-text-option__item(data-edit-type="fontsize-bigger")
+                                    +icon('line')
+                            .textarea-text-option--wrap
+                                .textarea-text-option(contenteditable="true") Ответ...
+
+                .section-footer-side
+                    .section-buttons--wrap
+                        button.section-button--yellow.w-100px.mr-3(type="submit") Сохранить
+                        .section-button--gray.w-100px Отменить

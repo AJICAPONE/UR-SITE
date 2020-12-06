@@ -1,0 +1,43 @@
+section.section1
+    .filter-main.box-bg2
+        .section-top-side
+            .section-reports-left
+                .section-block--title Google Analytics
+                .section-reports-date-list
+                    .section-reports-date-item.active Все дни
+                    .section-reports-date-item Сегодня
+                    .section-reports-date-item Неделя
+                    .section-reports-date-item Месяц
+                    .section-reports-date-item Год
+            .section-reports-right
+                .section-reports-mobile--wrap
+                    .section-reports-mobile.section-mobile-calendar__popup
+                        +icon('calendar3')
+                    .section-reports-mobile.section-dotted-mobile2.mr-0
+                        +icon('sort3')
+                    .section-upper-modal
+                        .section-reports-date-list.section-reports-date-list__mobile
+                            .section-reports-date-item.active Все дни
+                            .section-reports-date-item Сегодня
+                            .section-reports-date-item Неделя
+                            .section-reports-date-item Месяц
+                            .section-reports-date-item Год
+                    .section-upper-modal__calendar
+                        .col-xl-8.col-lg-12.col-md-12.col-sm-12.section-balance-filter--date.p-0
+                            label Укажите интервал:
+                            .section-balance-filter--date__wrap
+                                .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap.pl-0.pr-0
+                                    .section-balance-filter-date__wrap
+                                        input.input-main.calendar-filter-today.calendar-zone-height(type="text")
+                                        .section-balance-date--icon
+                                            +icon('calendar2')
+
+                                .col-xl-6.col-lg-6.col-md-6.col-sm-6.section-input-wrap.pr-0
+                                    .section-balance-filter-date__wrap
+                                        input.input-main.calendar-filter.calendar-zone-height(type="text")
+                                        .section-balance-date--icon
+                                            +icon('calendar2')
+                .section-reports-right--calendar
+                    .section-reports-right--calendar__date #[.srrc-date-1] - #[.srrc-date-2]
+                    .section-reports-right--calendar__icon
+                        +icon('calendar2')
