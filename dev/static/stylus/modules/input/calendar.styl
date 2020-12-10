@@ -3,8 +3,8 @@
   padding: 10px;
   border: 0;
   border-radius: 15px;
-  background-color: #363d4a;
-  box-shadow: 0 0 20px rgba(41,47,57,.6);
+  background-color: #fff;
+  box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 0.1);
 .gogocar-ul-navbar
   width: 107%!important;
   margin-left: -10px!important;
@@ -24,17 +24,19 @@
 .gogocar-calendar-next, .gogocar-calendar-prev
   border-radius: 10px;
   justify-content: center;
+  color #272727
 .gogocar-calendar-current
   font-family: 'Oswald 500',sans-serif;
   font-size: 16px;
   pointer-events: none;
-  color: #fff;
+  color: #272727;
 .datepicker-panel>ul>li, .datepicker-panel>ul[data-view=week]>li, .datepicker-panel>ul[data-view=week]>li:hover
   background-color transparent
 .gogocar-calendar-next .icon, .gogocar-calendar-prev .icon
   width: 16px;
   height: 16px;
   pointer-events: none;
+  fill #272727
 .gogocar-calendar-days.muted
   display none
 .datepicker-panel>ul:after, .datepicker-panel>ul:before
@@ -42,13 +44,16 @@
 .gogocar-calendar-next:hover, .gogocar-calendar-prev:hover
   background-color: #fdab3e!important;
   box-shadow: 0 0 20px rgba(253,171,62,.6);
+[data-view="week"]
+  .gogocar-calendar-days
+    color #272727
 .gogocar-calendar-days
   font-family: 'Montserrat 500',sans-serif;
   font-size: 15px;
   display: flex;
   width: 40px!important;
   height: 40px!important;
-  color: #fff;
+  color: #AFB2B5
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -61,9 +66,9 @@
   background-color: transparent!important;
   box-shadow: none;
 .gogocar-calendar-days:hover, .picked-day-gogocar
-  background-color: #fdab3e!important;
-  box-shadow: 0 0 20px rgba(253,171,62,.6);
+  background-color: transparent !important;
+  color #2F80ED
 .today-day-gogocar
-  color: #000;
-  background-color: #fff!important;
-  box-shadow: 0 0 20px rgba(255,255,255,.6);
+  color: #272727;
+  background-color: transparent !important;
+

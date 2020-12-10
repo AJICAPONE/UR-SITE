@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+
+
+
+
+
     // =============== Смена языка в админ панели ===============//
     $('.header-right-choise--lang').click(function () {
         $('.choise-lang--list').slideToggle(150);
@@ -322,17 +327,17 @@ $(document).ready(function () {
                 //     date.valueOf() < now ? true : false;
                 // },
                 template: '<div class="datepicker-container" id="datepicker-id-trip">' + '<div class="datepicker-panel" data-view="years picker">' + '<ul class="gogocar-ul-navbar">' + '<li data-view="years prev"><svg xmlns="http://www.w3.org/2000/svg" class="icon" id="Слой_1" data-name="Слой 1" viewBox="0 0 10 18">\n' +
-                    '  <path d="M9,17,1,9,9,1" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
+                    '  <path d="M9,17,1,9,9,1" style="fill: none;stroke: #272727;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
                     '</svg></li>' + '<li data-view="years current"></li>' + '<li data-view="years next"><svg xmlns="http://www.w3.org/2000/svg" class="icon" id="Слой_1" data-name="Слой 1" viewBox="0 0 10 18">\n' +
-                    '  <path d="M1,1,9,9,1,17" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
+                    '  <path d="M1,1,9,9,1,17" style="fill: none;stroke: #272727;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
                     '</svg></li>' + '</ul>' + '<ul data-view="years"></ul>' + '</div>' + '<div class="datepicker-panel" data-view="months picker">' + '<ul class="gogocar-ul-navbar">' + '<li data-view="year prev"><svg xmlns="http://www.w3.org/2000/svg" class="icon" id="Слой_1" data-name="Слой 1" viewBox="0 0 10 18">\n' +
-                    '  <path d="M9,17,1,9,9,1" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
+                    '  <path d="M9,17,1,9,9,1" style="fill: none;stroke: #272727;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
                     '</svg></li>' + '<li data-view="year current"></li>' + '<li data-view="year next"><svg xmlns="http://www.w3.org/2000/svg" class="icon" id="Слой_1" data-name="Слой 1" viewBox="0 0 10 18">\n' +
-                    '  <path d="M1,1,9,9,1,17" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
+                    '  <path d="M1,1,9,9,1,17" style="fill: none;stroke: #272727;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
                     '</svg></li>' + '</ul>' + '<ul data-view="months"></ul>' + '</div>' + '<div class="datepicker-panel" data-view="days picker">' + '<ul class="gogocar-ul-navbar">' + '<li data-view="month prev" class="gogocar-calendar-prev"><svg xmlns="http://www.w3.org/2000/svg" class="icon" id="Слой_1" data-name="Слой 1" viewBox="0 0 10 18">\n' +
-                    '  <path d="M9,17,1,9,9,1" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
+                    '  <path d="M9,17,1,9,9,1" style="fill: none;stroke: #272727;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
                     '</svg></li>' + '<li data-view="month current" class="gogocar-calendar-current"></li>' + '<li data-view="month next" class="gogocar-calendar-next"><svg xmlns="http://www.w3.org/2000/svg" class="icon" id="Слой_1" data-name="Слой 1" viewBox="0 0 10 18">\n' +
-                    '  <path d="M1,1,9,9,1,17" style="fill: none;stroke: #fff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
+                    '  <path d="M1,1,9,9,1,17" style="fill: none;stroke: #272727;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2px"/>\n' +
                     '</svg></li>' + '</ul>' + '<ul data-view="week"></ul>' + '<ul data-view="days"></ul>' + '</div>' + '</div>',
             });
 
